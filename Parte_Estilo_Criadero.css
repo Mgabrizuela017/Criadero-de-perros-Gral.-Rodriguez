@@ -1,0 +1,252 @@
+html{
+    background-color: rgb(252, 116, 138);
+    background: url(Imagenes/Corazon_rosa.png)no-repeat;
+    background-size:cover;
+}
+
+
+#Banner {
+    width: 650px;
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    margin: auto;
+    margin-top: 2px;
+    border: none; /* Elimina el borde si no lo necesitas */
+    padding: 20px 20px;}
+
+    #gallery {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+#gallery img {
+    width: 150px; /* Ancho de las imágenes */
+    height: 150px; /* Alto de las imágenes */
+    object-fit: cover; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+    transition: transform 0.1s; /* Efecto de transición */
+}
+
+#gallery img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+ #Barra_navegador{
+    margin: auto;
+    text-align:left;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    width: 400px;
+    background-color: rgba(184, 30, 30, 0.753);
+}
+
+#NV_BARRA{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    font-family: fantasy;
+    border-radius: 20px 20px 20px 20px;
+    }
+
+#NV_BARRA li {
+margin-right: 15px; /* Espacio entre los elementos de la lista */
+
+}
+#NV_BARRA  a{
+padding: 10px; /* Espacio interno en los enlaces */
+text-decoration: none; /* Eliminar subrayado */
+color: rgba(255, 255, 255, 0.945); /* Color del texto */
+}
+
+#NV_BARRA  a :hover{
+
+    color: black;
+}
+
+
+.Titulo{
+    font-family:fantasy;
+    font-size: 2.4em;
+    text-align: center;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.61);
+    
+    text-shadow: 7px 7px 9px black;
+}
+
+#Sub_titulo{
+font-family: fantasy;
+text-shadow: 2px 2px 2px black;
+color: rgb(255, 255, 255);
+font-size: 2em;
+margin-bottom: 20px
+
+}
+
+
+
+#Contenedor_Principal {
+display: flex; /* Utiliza Flexbox para alinear los elementos */
+justify-content: space-between; /* Espacio entre los elementos */
+flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+}
+
+#Principal {
+
+font-size: 1.2em;
+flex: 1; /* Permite que cada div ocupe el mismo espacio */
+margin: 10px; /* Espacio entre los divs */
+background-color: rgba(184, 30, 30, 0.753);
+border-radius: 20px; /* Bordes redondeados */
+padding: 20px; /* Espacio interno */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+width: 350px; /* Ancho fijo para el contenido principal */
+}
+
+#Principal p{
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+#Barra_lateral  {
+    width: 100px; /* Ancho de la barra lateral */
+    margin-left: auto; /* Espacio a la izquierda de la barra lateral */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+    background-color: rgba(184, 30, 30, 0.753);
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 60px; /* Espacio interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    font-family: fantasy;
+    float: right;
+    
+    
+    }
+
+    #Barra_lateral ul{
+        list-style: none;
+        padding: 0;
+
+    }
+
+    #Barra_lateral li{
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo suave */
+        border-radius: 10px; /* Bordes redondeados */
+        text-align: center
+        
+        
+
+    }
+
+    #Barra_lateral a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.89);
+        display: block;
+        font-weight: bold;
+        font-size: 13pt;
+    }
+
+    #Barra_lateral a:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+}
+    
+        #Barra_lateral h3{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-right: 35px;
+        padding: 5px;
+        font-family: fantasy;
+        font-size: 16pt;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+    }
+    p{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #Mapa {
+        text-align: center;
+        margin: 30px auto;
+        max-width: 600px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    #Mapa h3{
+        font-family: fantasy;
+        font-size: 20pt;
+    }
+
+    #Pie p{
+        border: double 1px black;
+        border-radius: 20px;
+        font-family: fantasy;
+        color: white;
+        background-color: rgba(150, 23, 23, 0.568);
+        width: 200px;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 5px;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 3px black;
+
+    }
+    #Pie img{
+
+        margin-right: 10px;
+    }
+    
+
+    #Pie_navega{
+        width: 400px;
+        margin: auto;
+        text-align: center;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        
+    }
+
+    #Pie_navega p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .Imagen_Whatsapp{
+
+        margin: auto;
+    }
+ 
+    footer {
+        display: flex;
+        justify-content: center; /* Centra los elementos */
+        gap: 20px; /* Espacio entre los elementos */
+        flex-wrap: wrap; /* Permite que se acomoden en varias líneas si la pantalla es pequeña */
+    }
+
+    #Logo_ubicacion{
+
+        border-radius: 50px 50px 50px 50px;
+        width: 30px;
+        margin-left: 480px;
+        
+    }
+    
+    #LogoGmail{
+        margin-bottom: 50px;
+    }
