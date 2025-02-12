@@ -38,7 +38,9 @@ html{
     color: rgb(0, 0, 0);
     border: 2px solid black;
     width: 400px;
+    padding: 10px;
     background-color: rgba(184, 30, 30, 0.753);
+    border-radius: 20px;
 }
 
 #NV_BARRA{
@@ -47,7 +49,7 @@ html{
     padding: 5px;
     margin: 0;
     font-family: fantasy;
-    border-radius: 20px 20px 20px 20px;
+   
     }
 
 #NV_BARRA li {
@@ -58,11 +60,21 @@ margin-right: 15px; /* Espacio entre los elementos de la lista */
 padding: 10px; /* Espacio interno en los enlaces */
 text-decoration: none; /* Eliminar subrayado */
 color: rgba(255, 255, 255, 0.945); /* Color del texto */
+
 }
 
-#NV_BARRA  a :hover{
+#NV_BARRA a:hover {
+    color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+   list-style: none;
+}
 
-    color: black;
+#NV_BARRA a:visited {
+    color: rgb(255, 255, 255);
+}
+
+#NV_BARRA a:active {
+    color: red;
 }
 
 
@@ -102,7 +114,7 @@ background-color: rgba(184, 30, 30, 0.753);
 border-radius: 20px; /* Bordes redondeados */
 padding: 20px; /* Espacio interno */
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-width: 350px; /* Ancho fijo para el contenido principal */
+width: 50px; /* Ancho fijo para el contenido principal */
 }
 
 #Principal p{
@@ -117,8 +129,8 @@ width: 350px; /* Ancho fijo para el contenido principal */
 
 #Barra_lateral  {
     width: 100px; /* Ancho de la barra lateral */
-    margin-left: auto; /* Espacio a la izquierda de la barra lateral */
-    margin-top: 10px;
+    margin-right: 50px; /* Espacio a la izquierda de la barra lateral */
+    margin-top: 65px;
     margin-bottom: 10px;
     height: 300px;
     background-color: rgba(184, 30, 30, 0.753);
@@ -227,10 +239,7 @@ width: 350px; /* Ancho fijo para el contenido principal */
     #Pie_navega p{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    .Imagen_Whatsapp{
-
-        margin: auto;
-    }
+    
  
     footer {
         display: flex;
@@ -243,10 +252,67 @@ width: 350px; /* Ancho fijo para el contenido principal */
 
         border-radius: 50px 50px 50px 50px;
         width: 30px;
-        margin-left: 480px;
+        margin-left: 200px;
         
     }
     
     #LogoGmail{
         margin-bottom: 50px;
     }
+
+    #book-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px auto;
+    }
+    
+    #photo-frame {
+        width: 900px;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 1px solid #000000;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    button {
+        background-color: #010e29;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    
+    button:hover {
+        background-color: #3e7af1;
+    }
+    
+#Contenedor_Principal {
+    display: flex;
+    justify-content: space-between; /* Separa los elementos */
+    flex-wrap: wrap; /* Permite que se acomoden en varias líneas si es necesario */
+}
+
+#Secundario h2{
+    font-family: fantasy;
+    font-size: 20pt;
+    text-align: center;
+    text-shadow: 2px 2px 3px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.856);
+    width: 250px;
+    margin-left:110px;
+    
+    border-radius: 20px;
+}
