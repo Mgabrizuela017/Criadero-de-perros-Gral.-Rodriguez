@@ -202,13 +202,15 @@ width: 50px; /* Ancho fijo para el contenido principal */
         font-size: 20pt;
     }
 
+    
+    /*FOOTER  ICONOS DE ABAJO*/
     #Pie p{
-        border: double 1px black;
+        border: none;
         border-radius: 20px;
         font-family: fantasy;
         color: white;
         background-color: rgba(150, 23, 23, 0.568);
-        width: 200px;
+        width: 172px;
         margin: auto;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -220,7 +222,7 @@ width: 50px; /* Ancho fijo para el contenido principal */
     }
     #Pie img{
 
-        margin-right: 10px;
+        margin: center;
     }
     
 
@@ -246,19 +248,10 @@ width: 50px; /* Ancho fijo para el contenido principal */
         justify-content: center; /* Centra los elementos */
         gap: 20px; /* Espacio entre los elementos */
         flex-wrap: wrap; /* Permite que se acomoden en varias líneas si la pantalla es pequeña */
+        padding: 3px;
     }
 
-    #Logo_ubicacion{
-
-        border-radius: 50px 50px 50px 50px;
-        width: 30px;
-        margin-left: 200px;
-        
-    }
-    
-    #LogoGmail{
-        margin-bottom: 50px;
-    }
+   
 
     #book-container {
         display: flex;
@@ -284,7 +277,7 @@ width: 50px; /* Ancho fijo para el contenido principal */
     }
     
     button {
-        background-color: #010e29;
+        background-color: #690808;
         color: white;
         border: none;
         padding: 10px;
@@ -292,9 +285,14 @@ width: 50px; /* Ancho fijo para el contenido principal */
         font-size: 18px;
         border-radius: 5px;
     }
+    #nextBtn  img{
+        transform: rotate(90deg); /* Gira la imagen 90 grados al pasar el mouse */
+        transition: transform 0.3s ease-in-out;
+        transform: rotateY(180deg);
+      }
     
     button:hover {
-        background-color: #3e7af1;
+        background-color: #000000;
     }
     
 #Contenedor_Principal {
@@ -307,7 +305,6 @@ width: 50px; /* Ancho fijo para el contenido principal */
     font-family: fantasy;
     font-size: 20pt;
     text-align: center;
-    text-shadow: 2px 2px 3px;
     margin-top: 20px;
     margin-bottom: 2px;
     background-color: rgba(255, 255, 255, 0.856);
