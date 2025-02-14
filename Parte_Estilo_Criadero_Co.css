@@ -1,0 +1,156 @@
+html{
+    background-color: rgb(252, 116, 138);
+    background: url(Imagenes/Corazon_rosa.png)no-repeat;
+    background-size:cover;
+}
+
+.Titulo2{
+    font-family:fantasy;
+    font-size: 2.4em;
+    text-align: center;
+    background:url(Imagenes/Camil_logo.png)no-repeat right;
+    color: rgba(0, 0, 0, 0.61);
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px black;
+    }
+#Barra_navegador2{
+    
+    margin-top: 40px;
+    margin-left: 490px;
+    text-align:left;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    width: 350px;
+    padding: 10px;
+    background-color: rgba(184, 30, 30, 0.753);
+    border-radius: 20px;
+}
+
+#NV_BARRA2{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    font-family: fantasy;
+   
+    }
+
+#NV_BARRA2 li {
+margin-right: 15px; /* Espacio entre los elementos de la lista */
+
+}
+#NV_BARRA2  a{
+padding: 10px; /* Espacio interno en los enlaces */
+text-decoration: none; /* Eliminar subrayado */
+color: rgba(255, 255, 255, 0.945); /* Color del texto */
+
+}
+
+#NV_BARRA2 a:hover {
+    color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+   list-style: none;
+}
+
+#NV_BARRA2 a:visited {
+    color: rgb(255, 255, 255);
+}
+
+#NV_BARRA2 a:active {
+    color: red;
+}
+
+
+
+
+    #Barra_lateral2 {
+        width: 200px; /* Ajusta el tamaño según tu diseño */
+        position: fixed; /* Fija la posición */
+        top: 50px; /* La distancia desde la parte superior de la pantalla */
+        left: 10px; /* La distancia desde el borde derecho */
+        background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
+    }
+
+    #Barra_lateral2 ul{
+        list-style: none;
+        padding: 0;
+
+    }
+
+    #Barra_lateral2 li{
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo suave */
+        border-radius: 10px; /* Bordes redondeados */
+        text-align: center
+        
+        
+
+    }
+
+    #Barra_lateral2 a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.89);
+        display: block;
+        font-weight: bold;
+        font-size: 13pt;
+    }
+
+    #Barra_lateral2 a:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+}
+    
+        #Barra_lateral2 h3{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-right: 35px;
+        padding: 5px;
+        font-family: fantasy;
+        font-size: 16pt;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+    }
+
+     
+   
+
+    #Mi_formulario{
+        border: 2px solid black;
+        width: 420px;
+        height: 500px;
+        margin:auto;
+        padding:20px;
+        padding-right: 36px;
+        text-align: auto;
+        margin-top: 20px;
+        background-color: rgba(100, 24, 24, 0.514);
+        /*letter-spacing: 1px;*/
+       /* word-spacing: 5px;*/
+        font-family: fantasy;  
+    }
+    #Mi_formulario p{
+
+        margin-bottom: 15px;
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    }
+    
+.etiq {
+    display: block; /* Hace que las etiquetas se muestren en una línea separada */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+input, select, textarea {
+    width: 100%; /* Hace que los campos ocupen todo el ancho disponible */
+    padding: 8px; /* Aumenta la zona de escritura */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(163, 24, 24);
+}
+ 
+
