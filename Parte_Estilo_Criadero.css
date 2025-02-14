@@ -123,7 +123,7 @@ width: 50px; /* Ancho fijo para el contenido principal */
 }
 
 #Principal p{
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo suave */
+    background-color: rgb(255, 255, 255); /* Fondo suave */
     border-radius: 10px; /* Bordes redondeados */
     text-align: center;
     padding: 10px;
@@ -241,7 +241,7 @@ width: 50px; /* Ancho fijo para el contenido principal */
         margin: center;
     }*/
     
-    #Contenedor_contacto {
+    #Pie {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -282,33 +282,29 @@ width: 50px; /* Ancho fijo para el contenido principal */
         width: 30px;
         height: 30px;
     }
-    #Pie_navega{
-        width: 1319px;
-        height: 150px;
-        margin: auto;
+    #Pie_navega {
+        border: 1px solid black;
         text-align: center;
-        
-    
-        background-color: black;
+        height: 130px;
         color: white;
-        padding: 15px;
-        
+        background-color: black;
+    
     }
-
     #Pie_navega p{
         font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 100px;
-     
-    }
-    #Pie_navega a:{
-        text-decoration: none; /* Quita el subrayado */
-        color: inherit; /* Mantiene el color del texto del padre */
+        margin-bottom: 10px;
+        padding-top:40px;
     }
     
-    a:visited {
-        color: inherit; /* Evita que cambie de color después de ser visitado */
-    }
- 
+        #Pie_navega a{
+            text-decoration: none; /* Quita el subrayado */
+            color: inherit; /* Mantiene el color del texto del padre */
+        }
+        
+        a:visited {
+            color: inherit; /* Evita que cambie de color después de ser visitado */
+        }
+    
     footer {
         display: flex;
         justify-content: center; /* Centra los elementos */

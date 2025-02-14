@@ -8,8 +8,8 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-<link rel="stylesheet" href="Pag_criadero.css">   
-<link rel="stylesheet" href="Parte_Estilo_Criadero_Co.css">
+<link rel="stylesheet" href="Pag_criadero.css">  
+<link rel="stylesheet" href="Servicios.css">
 
 
 <style>
@@ -90,6 +90,12 @@
     margin: 60px;
     
 }
+#Medios_de_pago img{
+    width: 150px;
+    height: 100px;
+    margin-left: 600px;
+
+}
     
 </style>
 
@@ -116,46 +122,21 @@
 
 
 
-   
-    
-    
-    <div id="Mi_formulario">
-        <form id="subForm" name="subForm" method="post" action="">
-            <p><label for="nombre"class="etiq" >Nombre </label>
-              <input type="text" name="name" id="nombre" /></p>
-              <p><label for="direccion" class="etiq">Direccion email </label>
-              <input type="text" name="email" id="email" /></p>
-              <p> <span class="etiq"> ¿Que raza de cachorro estas buscando? </span>
-                <label>
-                <input name="nivel" type="radio" value="novice" />
-                Bulldog frances</label>
-                <label>
-                <input name="nivel" type="radio" value="intermediate" />
-                bull terrier pitbull</label>
-                <label>
-                <input name="nivel" type="radio" value="advanced" />
-                Rootwailler</label>
-              </p>
-              <p>
-                <label for="referencias" class="etiq"> como nos conocistes?  </label>
-                <select name="refer" id="refer">
-                  <option value="null">Selecciona una</option>
-                  <option value="1">Amigos</option>
-                  <option value="2">Conocidos</option>
-                  <option value="3">Redes sociales</option>
-                  <option value="4">Otros</option>
-                </select>
-              </p>
-              <p>
-                <label for="comentarios" class="etiq" >Comentarios adicionales </label>
-                <textarea name="comments" cols="35" rows="4" id="comentarios"></textarea>
-              </p>
-              <p>
-                <input type="submit" name="Submit" id="suscribe" value="Enviar!" />
-              </p>
-            </form>
-    
+    <section>
+        
+        <div id="Medios_de_pago">
+           
+            
+            <p>Medios de pago:</p><img src="Imagenes/VISA_Mastercard-mp-maestro-american.png">
+            <p>Aceptamos coutas sin interes con tarjeta de credito.</p>
+           
+        
+            
         </div>
+
+    </section>
+
+    
     
     <div>
         <aside id="Barra_lateral2">
@@ -217,22 +198,3 @@
 </body>
 </html>
 
-
-
-<!--
-#Barra_lateral2 {
-    width: 100px; /* Ancho de la barra lateral */
-    margin-right: 50px; /* Espacio a la izquierda de la barra lateral */
-    margin-top: 65px;
-    margin-bottom: 10px;
-    height: 300px;
-    background-color: rgba(184, 30, 30, 0.753);
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 60px; /* Espacio interno */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-    font-family: fantasy;
-    float: right;
-    
-    
-    
-    }-->
