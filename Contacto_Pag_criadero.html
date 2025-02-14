@@ -11,15 +11,205 @@
 <link rel="stylesheet" href="Pag_criadero.css">   
 <link rel="stylesheet" href="Parte_Estilo_Criadero.css">
 
+
+<style>
+     #Barra_navegador2{
+    
+    margin-top: 40px;
+    margin-left: 490px;
+    text-align:left;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    width: 350px;
+    padding: 10px;
+    background-color: rgba(184, 30, 30, 0.753);
+    border-radius: 20px;
+}
+
+#NV_BARRA2{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    font-family: fantasy;
+   
+    }
+
+#NV_BARRA2 li {
+margin-right: 15px; /* Espacio entre los elementos de la lista */
+
+}
+#NV_BARRA2  a{
+padding: 10px; /* Espacio interno en los enlaces */
+text-decoration: none; /* Eliminar subrayado */
+color: rgba(255, 255, 255, 0.945); /* Color del texto */
+
+}
+
+#NV_BARRA2 a:hover {
+    color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+   list-style: none;
+}
+
+#NV_BARRA2 a:visited {
+    color: rgb(255, 255, 255);
+}
+
+#NV_BARRA2 a:active {
+    color: red;
+}
+
+
+#Barra_lateral2 {
+    width: 100px; /* Ancho de la barra lateral */
+    margin-right: 50px; /* Espacio a la izquierda de la barra lateral */
+    margin-top: 65px;
+    margin-bottom: 10px;
+    height: 300px;
+    background-color: rgba(184, 30, 30, 0.753);
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 60px; /* Espacio interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    font-family: fantasy;
+    float: right;
+    
+    
+    }
+
+    #Barra_lateral2 ul{
+        list-style: none;
+        padding: 0;
+
+    }
+
+    #Barra_lateral2 li{
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo suave */
+        border-radius: 10px; /* Bordes redondeados */
+        text-align: center
+        
+        
+
+    }
+
+    #Barra_lateral2 a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.89);
+        display: block;
+        font-weight: bold;
+        font-size: 13pt;
+    }
+
+    #Barra_lateral2 a:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+}
+    
+        #Barra_lateral2 h3{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-right: 35px;
+        padding: 5px;
+        font-family: fantasy;
+        font-size: 16pt;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+    }
+
+     
+    #Pie p{
+        border: none;
+        border-radius: 20px;
+        font-family: fantasy;
+        color: white;
+        background-color: rgba(150, 23, 23, 0.568);
+        width: 172px;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 5px;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 3px black;
+
+    }
+    #Pie img{
+
+        margin: center;
+    }
+    
+
+    #Pie_navega2{
+        
+        width: 319px;
+        height: 150px;
+        margin: auto;
+        position: fixed;
+        text-align: center;
+        
+    
+        background-color: black;
+        color: white;
+        padding: 15px;
+        
+    }
+
+    #Pie_navega2 p{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 100px;
+     
+    }
+
+    #Mi_formulario{
+        border: 2px solid black;
+        width: 420px;
+        height: 550px;
+        margin:auto;
+        padding:20px;
+        padding-right: 36px;
+        text-align: auto;
+        margin-top: 200px;
+        background-color: rgba(100, 24, 24, 0.514);
+        /*letter-spacing: 1px;*/
+       /* word-spacing: 5px;*/
+        font-family: fantasy;  
+    }
+    #Mi_formulario p{
+
+        margin-bottom: 15px;
+        color: white;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    }
+    
+.etiq {
+    display: block; /* Hace que las etiquetas se muestren en una línea separada */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+input, select, textarea {
+    width: 100%; /* Hace que los campos ocupen todo el ancho disponible */
+    padding: 8px; /* Aumenta la zona de escritura */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(163, 24, 24);
+}
+ 
+
+ 
+</style>
 </head>
 
 <body>
+    <h1 class="Titulo"> Criadero de perros General Rodriguez</h1>
 
     <div id="Navegador">
         
-        <nav id="Barra_navegador">
+        <nav id="Barra_navegador2">
         
-        <ul id="NV_BARRA">
+        <ul id="NV_BARRA2">
             <li><a href="Pag_criadero.html">Inicio </a></li>
             <li><a href="Contacto_Pag_criadero.html">Contacto </a></li>
             <li><a href="Razas_Pagina_Criadero.html"> Razas </a></li>
@@ -32,6 +222,68 @@
     
     </div>
 
+    <div id="Mi_formulario">
+        <form id="subForm" name="subForm" method="post" action="">
+            <p><label for="nombre"class="etiq" >Nombre </label>
+              <input type="text" name="name" id="nombre" /></p>
+              <p><label for="direccion" class="etiq">Direcci&oacute;n correo-e </label>
+              <input type="text" name="email" id="email" /></p>
+              <p> <span class="etiq"> ¿Que raza de cachorro estas buscando? </span>
+                <label>
+                <input name="nivel" type="radio" value="novice" />
+                Bulldog frances</label>
+                <label>
+                <input name="nivel" type="radio" value="intermediate" />
+                bull terrier pitbull</label>
+                <label>
+                <input name="nivel" type="radio" value="advanced" />
+                Rootwailler</label>
+              </p>
+              <p>
+                <label for="referencias" class="etiq"> como nos conocistes?  </label>
+                <select name="refer" id="refer">
+                  <option value="null">Selecciona una</option>
+                  <option value="1">Amigos</option>
+                  <option value="2">Internet</option>
+                  <option value="3">Prensa</option>
+                  <option value="4">Otros</option>
+                </select>
+              </p>
+              <p>
+                <label for="comentarios" class="etiq" >Comentarios adicionales </label>
+                <textarea name="comments" cols="35" rows="4" id="comentarios"></textarea>
+              </p>
+              <p>
+                <input type="submit" name="Submit" id="suscribe" value="Suscr&iacute;bete !" />
+              </p>
+            </form>
+
+    </div>
+    <div>
+        <aside id="Barra_lateral2">
+            <h3>Información Adicional</h3>
+            
+            <ul>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Testimonios</a></li>
+                <li><a href="#">Consejos de Cuidado</a></li>
+                <li><a href="Contacto_Pag_criadero.html">Contacto</a></li>
+            </ul>
+
+        </aside>
+    </div>
+
+    
+    <div id="Pie_navega2">
+            
+        <address>
+        
+        
+            <p>© Copyright Criadero_Gral.Rodriguez All Rights Reserved</p>
+            <p>Diseñado por Marcos G. Brizuela</p>
+    
+        </address>
+    </div>
 
 </body>
 
