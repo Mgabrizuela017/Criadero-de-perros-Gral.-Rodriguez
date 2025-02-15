@@ -14,6 +14,75 @@
 
 <style>
 
+html{
+    background-color: rgb(252, 116, 138);
+    background: url(Imagenes/Corazon_rosa.png)no-repeat;
+    background-size:cover;
+}
+
+.Titulo_Nosotros{
+    font-family:fantasy;
+    font-size: 2.4em;
+    text-align: center;
+    background:url(Imagenes/Camil_logo.png)repeat-y;
+    background-position: right;
+    color: rgba(0, 0, 0, 0.61);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.Titulo p{
+    background-color: white;
+}
+#Barra_navegador_Nosotros{
+    margin-top: 20px;
+    margin: auto;
+    text-align:center;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    width: 390px;
+    padding: 10px;
+    background-color: rgba(184, 30, 30, 0.753);
+    border-radius: 20px;
+}
+
+#NV_BARRA_Nosotros{
+    
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    font-family: fantasy;
+   
+    }
+
+#NV_BARRA_Nosotros li {
+margin-right: 15px; /* Espacio entre los elementos de la lista */
+
+}
+#NV_BARRA_Nosotros  a{
+padding: 10px; /* Espacio interno en los enlaces */
+text-decoration: none; /* Eliminar subrayado */
+color: rgba(255, 255, 255, 0.945); /* Color del texto */
+
+}
+
+#NV_BARRA_Nosotros a:hover {
+    color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+   list-style: none;
+}
+
+#NV_BARRA_Nosotros a:visited {
+    color: rgb(255, 255, 255);
+}
+
+#NV_BARRA_Nosotros a:active {
+    color: red;
+}
+
+
 #Sub_titulo4{
 font-family: fantasy;
 text-shadow: 2px 2px 2px black;
@@ -33,7 +102,7 @@ flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es n
 
 font-size: 1.2em;
 flex: 1; /* Permite que cada div ocupe el mismo espacio */
-margin: 10px; /* Espacio entre los divs */
+margin: auto;
 background-color: rgba(184, 30, 30, 0.753);
 border-radius: 20px; /* Bordes redondeados */
 padding: 20px; /* Espacio interno */
@@ -49,9 +118,13 @@ width: 500px; /* Ancho fijo para el contenido principal */
 }
 
 #Portada img{
-    margin-left: 220px;
-    width: 900px;
-    height: 350px;
+    margin-left: 270px;
+    width: 800px;
+    height: 340px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -113,14 +186,18 @@ width: 500px; /* Ancho fijo para el contenido principal */
 </head>
 
 <body>
-    <head>
-       
-    </head>
+    
+    <header>
+        <h1 class="Titulo_Nosotros"> Criadero de perros General Rodriguez</h1>
+    
+    </header>
+
+    
     <div id="Navegador">
         
-        <nav id="Barra_navegador">
+        <nav id="Barra_navegador_Nosotros">
         
-        <ul id="NV_BARRA">
+        <ul id="NV_BARRA_Nosotros">
             <li><a href="Pag_criadero.html">Inicio </a></li>
             <li><a href="Contacto_Pag_criadero.html">Contacto </a></li>
             <li><a href="Razas_Pagina_Criadero.html"> Razas </a></li>
@@ -153,7 +230,7 @@ width: 500px; /* Ancho fijo para el contenido principal */
        
     <div id="Portada">
 
-        <img src="Imagenes/Portada.png">
+        <img src="Imagenes/Portada_Criadero_posta.png">
 
     </div>
 <section>
@@ -169,8 +246,46 @@ width: 500px; /* Ancho fijo para el contenido principal */
     
     
     
-    
 </section>
+     
+
+
+<footer>
+    <div id="Pie">
+            
+         <div id="Logo_ubicacion" class="contact-item">
+            <img src="Imagenes/Ubicacion_one.png"> 
+            <span>Av. Italia 650</span>
+        </div>
+
+        <div id="LogoGmail" class="contact-item">
+            <img src="Imagenes/LOGO_GMAIL_ONE.png"> 
+            <span>Dev07brizuela@gmail.com</span>
+        </div>
+
+        <div id="Logo_whatsapp" class="contact-item">
+            <a href="https://web.whatsapp.com/"><img src="Imagenes/whatsapp_Transparente.png"></a> 
+            <span>Whatsapp: 1160461788</span>
+        </div>
+    </div>
+    
+</footer>
+
+
+
+<div id="Pie_navega">
+            
+    <address>
+    
+    
+        <p>© Copyright Criadero_Gral.Rodriguez All Rights Reserved</p>
+        <p id="Link_github">Diseñado por <a href="https://github.com/Mgabrizuela017"> Marcos G. Brizuela</a></p>
+        <span><img src="Imagenes/icono2_GITHUB.png"></span>
+
+    </address>
+</div>
+
+</div>
 
 </body>
 
