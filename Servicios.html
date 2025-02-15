@@ -10,6 +10,7 @@
 
 <link rel="stylesheet" href="Pag_criadero.css">  
 <link rel="stylesheet" href="Servicios.css">
+<link rel="stylesheet" href="Parte_Estilo_Criadero.css">
 
 
 <style>
@@ -52,8 +53,10 @@
         
     }
     #Logo_whatsapp a:hover{
-        background-color: #25D366;
+        background-color: #83f1ab;
         transition: 1.2s;
+        transform: rotate(360deg);
+        
     
     }
 
@@ -72,8 +75,8 @@
 }
 #Pie_navega2 p{
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
-    padding-top:40px;
+    margin-bottom: 1px;
+    padding-top:30px;
 }
 
     #Pie_navega2 a{
@@ -96,6 +99,61 @@
     margin-left: 600px;
 
 }
+
+
+#Barra_lateral2 {
+        width: 200px; /* Ajusta el tamaño según tu diseño */
+        position: fixed; /* Fija la posición */
+        top: 50px; /* La distancia desde la parte superior de la pantalla */
+        left: 10px; /* La distancia desde el borde derecho */
+        background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
+    }
+
+    #Barra_lateral2 ul{
+        list-style: none;
+        padding: 0;
+
+    }
+
+    #Barra_lateral2 li{
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo suave */
+        border-radius: 10px; /* Bordes redondeados */
+        text-align: center
+        
+        
+
+    }
+
+    #Barra_lateral2 a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.89);
+        display: block;
+        font-weight: bold;
+        font-size: 13pt;
+    }
+
+    #Barra_lateral2 a:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+}
+    
+        #Barra_lateral2 h3{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-right: 35px;
+        padding: 5px;
+        font-family: fantasy;
+        font-size: 16pt;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+    }
+
     
 </style>
 
@@ -127,8 +185,12 @@
         <div id="Medios_de_pago">
            
             
-            <p>Medios de pago:</p><img src="Imagenes/VISA_Mastercard-mp-maestro-american.png">
+            <p>Medios de pago:</p>
             <p>Aceptamos coutas sin interes con tarjeta de credito.</p>
+
+            <p>CVU:0000003100063191291428</p>
+            <p>Alias: humos.nix</p>
+            <span><img src="Imagenes/VISA_Mastercard-mp-maestro-american.png"></span>
            
         
             
@@ -143,6 +205,7 @@
             <h3>Información Adicional</h3>
             
             <ul>
+                <li><a href="Pag_criadero.html">Inicio</a></li>
                 <li><a href="Servicios.html">Servicios</a></li>
                 <li><a href="#">Testimonios</a></li>
                 <li><a href="#">Consejos de Cuidado</a></li>
@@ -188,7 +251,8 @@
             
             
                 <p>© Copyright Criadero_Gral.Rodriguez All Rights Reserved</p>
-                <p id="Link_github">Diseñado por<a href="https://github.com/Mgabrizuela017">Marcos G. Brizuela</a></p>
+                <p id="Link_github">Diseñado por <a href="https://github.com/Mgabrizuela017"> Marcos G. Brizuela</a></p>
+                <span><img src="Imagenes/icono2_GITHUB.png"></span>
         
             </address>
         </div>

@@ -156,3 +156,81 @@ input, select, textarea {
 }
  
 
+#Contenedor_contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #6b12124d; 
+
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+}
+
+#Logo_ubicacion {
+    background-color: #bb3b3be3; 
+}
+
+#LogoGmail {
+    background-color: #ff5e009a; /* Rojo Gmail */
+}
+
+#Logo_whatsapp {
+    background-color: #25D366; /* Verde WhatsApp */
+    
+}
+#Logo_whatsapp a:hover{
+    background-color: #83f1ab;
+    transition: 1.2s;
+    transform: rotate(360deg);
+    border-radius: 40px;
+
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+#Pie_navega2 {
+border: 1px solid black;
+text-align: center;
+height: 130px;
+color: white;
+background-color: black;
+
+}
+#Pie_navega2 p{
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 1px;
+padding-top:30px;
+}
+
+#Pie_navega2 a{
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Mantiene el color del texto del padre */
+}
+
+a:visited {
+    color: inherit; /* Evita que cambie de color después de ser visitado */
+}
+
+#Medios_de_pago p{
+text-align: center;
+margin: 60px;
+
+}
