@@ -127,7 +127,7 @@ width: 50px; /* Ancho fijo para el contenido principal */
     border-radius: 10px; /* Bordes redondeados */
     text-align: center;
     padding: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     }
