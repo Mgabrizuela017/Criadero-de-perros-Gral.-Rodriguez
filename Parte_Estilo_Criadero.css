@@ -37,7 +37,7 @@ html{
     text-align:left;
     color: rgb(0, 0, 0);
     border: 2px solid black;
-    width: 390px;
+    width: 270px;
     padding: 10px;
     background-color: rgba(184, 30, 30, 0.753);
     border-radius: 20px;
@@ -55,11 +55,13 @@ html{
 #NV_BARRA li {
 margin-right: 15px; /* Espacio entre los elementos de la lista */
 
+
 }
 #NV_BARRA  a{
-padding: 10px; /* Espacio interno en los enlaces */
+padding: 1px; /* Espacio interno en los enlaces */
 text-decoration: none; /* Eliminar subrayado */
 color: rgba(255, 255, 255, 0.945); /* Color del texto */
+list-style: none;
 
 }
 
@@ -67,6 +69,8 @@ color: rgba(255, 255, 255, 0.945); /* Color del texto */
     color: rgb(255, 255, 255);
    background-color: rgb(0, 0, 0);
    list-style: none;
+   border-radius: 20px solid black;
+   
 }
 
 #NV_BARRA a:visited {
@@ -82,7 +86,7 @@ color: rgba(255, 255, 255, 0.945); /* Color del texto */
     font-family:fantasy;
     font-size: 2.4em;
     text-align: center;
-    background:url(Imagenes/Camil_logo.png)repeat-y;
+    /*background:url(Imagenes/Camil_logo.png)repeat-y;*/
     background-position: right;
     color: rgba(0, 0, 0, 0.61);
     margin-top: 10px;
@@ -104,22 +108,20 @@ margin-bottom: 20px
 
 
 
-#Contenedor_Principal {
-display: flex; /* Utiliza Flexbox para alinear los elementos */
-justify-content: space-between; /* Espacio entre los elementos */
-flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
-}
 
 #Principal {
 
-font-size: 1.2em;
 flex: 1; /* Permite que cada div ocupe el mismo espacio */
-margin: 10px; /* Espacio entre los divs */
+
+margin: auto; /* Espacio entre los divs */
+margin-top: 20px;
+width: 800px; /* Ancho fijo para el contenido principal */
+height: 220px;
+font-size: 1.2em;
 background-color: rgba(184, 30, 30, 0.753);
 border-radius: 20px; /* Bordes redondeados */
 padding: 20px; /* Espacio interno */
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-width: 50px; /* Ancho fijo para el contenido principal */
 }
 
 #Principal p{
@@ -134,32 +136,17 @@ width: 50px; /* Ancho fijo para el contenido principal */
  
 
 
-#Barra_lateral {
-    width: 200px; /* Ajusta el tamaño según tu diseño */
-    position: fixed; /* Fija la posición */
-    top: 200px; /* La distancia desde la parte superior de la pantalla */
-    left: 10px; /* La distancia desde el borde derecho */
-    background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
-}
-
-#Barra_lateral_Pv1  {
-    width: 100px; /* Ancho de la barra lateral */
-    margin-right: 50px; /* Espacio a la izquierda de la barra lateral */
-    margin-top: 65px;
-    margin-bottom: 10px;
-    height: 300px;
-    background-color: rgba(184, 30, 30, 0.753);
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 60px; /* Espacio interno */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-    font-family: fantasy;
-    float: right;
-    
-    
+    #Barra_lateral {
+        width: 200px; /* Ajusta el tamaño según tu diseño */
+        position: fixed; /* Fija la posición */
+        top: 120px; /* La distancia desde la parte superior de la pantalla */
+        left: 10px; /* La distancia desde el borde derecho */
+        background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
     }
+
 
     #Barra_lateral ul{
         list-style: none;
@@ -368,11 +355,6 @@ img {
         background-color: #000000;
     }
     
-#Contenedor_Principal {
-    display: flex;
-    justify-content: space-between; /* Separa los elementos */
-    flex-wrap: wrap; /* Permite que se acomoden en varias líneas si es necesario */
-}
 
 #Secundario h2{
     font-family: fantasy;

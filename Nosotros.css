@@ -8,7 +8,7 @@ html{
     font-family:fantasy;
     font-size: 2.4em;
     text-align: center;
-    background:url(Imagenes/Camil_logo.png)repeat-y;
+    /*background:url(Imagenes/Camil_logo.png)repeat-y;*/
     background-position: right;
     color: rgba(0, 0, 0, 0.61);
     margin-top: 10px;
@@ -25,7 +25,7 @@ html{
     text-align:center;
     color: rgb(0, 0, 0);
     border: 2px solid black;
-    width: 390px;
+    width: 330px;
     padding: 10px;
     background-color: rgba(184, 30, 30, 0.753);
     border-radius: 20px;
@@ -168,9 +168,9 @@ width: 500px; /* Ancho fijo para el contenido principal */
     #Barra_lateral_izquierda{
 
         width: 200px; /* Ajusta el tamaño según tu diseño */
-        height: 520px;
+        height: 580px;
         position: fixed; /* Fija la posición */
-        top: 50px; /* La distancia desde la parte superior de la pantalla */
+        top: 20px; /* La distancia desde la parte superior de la pantalla */
         right: 10px; /* La distancia desde el borde derecho */
         background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
         padding: 15px;
@@ -181,7 +181,7 @@ width: 500px; /* Ancho fijo para el contenido principal */
     
     #Barra_lateral_izquierda h3{
     margin-top: 10px;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     margin-right: 35px;
     padding: 5px;
     font-family: fantasy;
@@ -219,12 +219,7 @@ width: 500px; /* Ancho fijo para el contenido principal */
     
 #Barra_lateral_izquierda img{
     width: 200px;
-    height: 80px;
+    height: 110px;
     margin-top: 20px;
     
-}
-
-.imagen1{
-    
-    height: 300px;
 }

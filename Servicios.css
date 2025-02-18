@@ -8,7 +8,7 @@ html{
     font-family:fantasy;
     font-size: 2.4em;
     text-align: center;
-    background:url(Imagenes/Camil_logo.png)no-repeat right;
+    /*background:url(Imagenes/Camil_logo.png)no-repeat right;*/
     color: rgba(0, 0, 0, 0.61);
     margin-top: 10px;
     text-shadow: 1px 1px 2px black;
@@ -20,7 +20,7 @@ html{
     text-align:left;
     color: rgb(0, 0, 0);
     border: 2px solid black;
-    width: 350px;
+    width: 330px;
     padding: 10px;
     background-color: rgba(184, 30, 30, 0.753);
     border-radius: 20px;
@@ -170,28 +170,6 @@ img {
     height: 30px;
 }
 
-#Pie_navega2 {
-border: 1px solid black;
-text-align: center;
-height: 130px;
-color: white;
-background-color: black;
-
-}
-#Pie_navega2 p{
-font-family: Arial, Helvetica, sans-serif;
-margin-bottom: 1px;
-padding-top:30px;
-}
-
-#Pie_navega2 a{
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Mantiene el color del texto del padre */
-}
-
-a:visited {
-    color: inherit; /* Evita que cambie de color después de ser visitado */
-}
 
 #Medios_de_pago p{
 text-align: left;
@@ -207,15 +185,6 @@ padding: 10px;
 
 
 }
-#Mediospagoimagen img{
-width: 460px;
-height: 150px;
-margin-top: 130px;
-
-
-
-
-}
 
 #Medios_de_pago{
     border: 2px solid black;
@@ -225,7 +194,97 @@ margin-top: 130px;
     margin-left: 250px;
     background-color: rgba(71, 12, 12, 0.712);
     border-radius: 50px;
+    position:relative ;
 }
 
- 
 
+#Mediospago {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#Mediospago img {
+    width: 260px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+} 
+
+#Pie_navega2 {
+    border: 1px solid black;
+    text-align: center;
+    height: 155px;
+    color: white;
+    background-color: black;
+    position: relative; /* Necesario para posicionar la imagen */
+}
+
+#Pie_navega2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1px;
+    padding-top: 30px;
+}
+
+#Pie_navega2 a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Mantiene el color del texto del padre */
+}
+
+a:visited {
+    color: inherit; /* Evita que cambie de color después de ser visitado */
+}
+
+#fca1 img{
+    position: absolute;
+    right: -450px;
+    bottom: 10px;
+}
+
+#fca1 img{
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+
+
+}
+
+address{
+    position: relative;
+}
+
+footer{position: relative;}
+
+
+#Barra_lateral_izquierda{
+
+    width: 180px; /* Ajusta el tamaño según tu diseño */
+    height: 570px;
+    position: fixed; /* Fija la posición */
+    top: 30px; /* La distancia desde la parte superior de la pantalla */
+    right: 10px; /* La distancia desde el borde derecho */
+    background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
+    margin-bottom: 30px;
+
+}
+
+#Barra_lateral_izquierda h3{
+margin-top: 10px;
+margin-bottom: 7px;
+margin-right: 35px;
+padding: 5px;
+font-family: fantasy;
+font-size: 16pt;
+color: white;
+text-shadow: 2px 2px 4px black;
+
+}
+
+
+
+
+#Barra_lateral_izquierda img{
+width: 150px;
+height: 210px;
+margin-bottom: 10px;
+margin-top: 10px;}

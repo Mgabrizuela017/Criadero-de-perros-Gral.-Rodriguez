@@ -8,7 +8,7 @@ html{
     font-family:fantasy;
     font-size: 2.4em;
     text-align: center;
-    background:url(Imagenes/Camil_logo.png)no-repeat right;
+    /*background:url(Imagenes/Camil_logo.png)no-repeat right;*/
     color: rgba(0, 0, 0, 0.61);
     margin-top: 10px;
     text-shadow: 1px 1px 2px black;
@@ -153,6 +153,22 @@ input, select, textarea {
     border-radius: 5px;
     color: rgb(255, 255, 255);
     background-color: rgba(68, 7, 7, 0.664);
+}
+
+#Informacion_sobre_datos{
+    margin-top: 10px;
+    margin-left: 330px;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 20px;
+    
+    color: black;
+    
+    
+    
+    
 }
  
 
