@@ -119,6 +119,42 @@ color: rgba(255, 255, 255, 0.945); /* Color del texto */
      
    
 
+    #Barra_lateral_izquierda{
+
+        width: 180px; /* Ajusta el tamaño según tu diseño */
+        height: 570px;
+        position: fixed; /* Fija la posición */
+        top: 30px; /* La distancia desde la parte superior de la pantalla */
+        right: 10px; /* La distancia desde el borde derecho */
+        background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
+        margin-bottom: 30px;
+    
+    }
+    
+    #Barra_lateral_izquierda h3{
+    margin-top: 10px;
+    margin-bottom: 7px;
+    margin-right: 35px;
+    padding: 5px;
+    font-family: fantasy;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    
+    }
+    
+    
+    
+    
+    #Barra_lateral_izquierda img{
+    width: 150px;
+    height: 210px;
+    margin-bottom: 10px;
+    margin-top: 10px;}
+    
 
 #Contenedor_contacto {
     display: flex;
@@ -171,120 +207,86 @@ img {
 }
 
 
+
+
 #Medios_de_pago p{
-text-align: left;
-margin: 60px;
-font-family: 'Times New Roman', Times, serif;
-font-size: 15pt;
-background-color: rgba(255, 255, 255, 0.089);
-color: white;
-border-radius: 20px;
-width: 500px;
-padding: 10px;
-
-
-
-}
-
-#Medios_de_pago{
-    border: 2px solid black;
-    width: 900px;
-    margin: auto;
-    margin-top: 30px;
-    margin-left: 250px;
-    background-color: rgba(71, 12, 12, 0.712);
-    border-radius: 50px;
-    position:relative ;
-}
-
-
-#Mediospago {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-}
-
-#Mediospago img {
-    width: 260px; /* Ajusta el tamaño según sea necesario */
-    height: auto;
-} 
-
-#Pie_navega2 {
-    border: 1px solid black;
-    text-align: center;
-    height: 155px;
+    text-align: left;
+    margin: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    background-color: rgba(255, 255, 255, 0.089);
     color: white;
-    background-color: black;
-    position: relative; /* Necesario para posicionar la imagen */
-}
+    border-radius: 20px;
+    width: 500px;
+    padding: 10px;
+    
+    
+    
+    }
+    
+    #Medios_de_pago{
+        border: 2px solid black;
+        width: 900px;
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 250px;
+        background-color: rgba(71, 12, 12, 0.712);
+        border-radius: 50px;
+        position:relative ;
+    }
+    
+    
+    #Mediospago {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    
+    #Mediospago img {
+        width: 260px;
+        height: auto;
+    }
 
-#Pie_navega2 p {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 1px;
-    padding-top: 30px;
-}
-
-#Pie_navega2 a {
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Mantiene el color del texto del padre */
-}
-
-a:visited {
-    color: inherit; /* Evita que cambie de color después de ser visitado */
-}
-
-#fca1 img{
-    position: absolute;
-    right: -450px;
-    bottom: 10px;
-}
-
-#fca1 img{
-    width: 150px; /* Ajusta el tamaño según sea necesario */
-    height: auto;
-
-
-}
-
-address{
-    position: relative;
-}
-
-footer{position: relative;}
-
-
-#Barra_lateral_izquierda{
-
-    width: 180px; /* Ajusta el tamaño según tu diseño */
-    height: 570px;
-    position: fixed; /* Fija la posición */
-    top: 30px; /* La distancia desde la parte superior de la pantalla */
-    right: 10px; /* La distancia desde el borde derecho */
-    background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
-    margin-bottom: 30px;
-
-}
-
-#Barra_lateral_izquierda h3{
-margin-top: 10px;
-margin-bottom: 7px;
-margin-right: 35px;
-padding: 5px;
-font-family: fantasy;
-font-size: 16pt;
-color: white;
-text-shadow: 2px 2px 4px black;
-
-}
+  
+    #Pie_navega2 {
+        height: auto; /* Evita que tenga una altura fija */
+        padding: 30px 20px 50px; /* Añade más espacio abajo */
+        text-align: center;
+        color: white;
+        background-color: black;
+        position: relative;
+    }
 
 
-
-
-#Barra_lateral_izquierda img{
-width: 150px;
-height: 210px;
-margin-bottom: 10px;
-margin-top: 10px;}
+    
+    #Pie_navega2 p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 1px;
+        padding-top: 30px;
+    }
+    
+    #Pie_navega2 a {
+        text-decoration: none; /* Quita el subrayado */
+        color: inherit; /* Mantiene el color del texto del padre */
+    }
+    
+    a:visited {
+        color: inherit; /* Evita que cambie de color después de ser visitado */
+    }
+    
+    #fca1 {
+        position: absolute;
+        right: -30px; /* Ajusta según necesites */
+        bottom: -20px;
+    }
+    
+    #fca1 img {
+        width: 150px;
+        height: auto;
+    }
+    
+    footer {
+        position: relative;
+        overflow: hidden; /* Evita que las imágenes se salgan */
+    }
+    

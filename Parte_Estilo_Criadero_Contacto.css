@@ -222,21 +222,25 @@ img {
     height: 30px;
 }
 
+
 #Pie_navega2 {
-border: 1px solid black;
-text-align: center;
-height: 130px;
-color: white;
-background-color: black;
-
-}
-#Pie_navega2 p{
-font-family: Arial, Helvetica, sans-serif;
-margin-bottom: 1px;
-padding-top:30px;
+    height: auto; /* Evita que tenga una altura fija */
+    padding: 30px 20px 50px; /* Añade más espacio abajo */
+    text-align: center;
+    color: white;
+    background-color: black;
+    position: relative;
 }
 
-#Pie_navega2 a{
+
+
+#Pie_navega2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1px;
+    padding-top: 30px;
+}
+
+#Pie_navega2 a {
     text-decoration: none; /* Quita el subrayado */
     color: inherit; /* Mantiene el color del texto del padre */
 }
@@ -244,6 +248,23 @@ padding-top:30px;
 a:visited {
     color: inherit; /* Evita que cambie de color después de ser visitado */
 }
+
+#fca1 {
+    position: absolute;
+    right: -30px; /* Ajusta según necesites */
+    bottom: -20px;
+}
+
+#fca1 img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    position: relative;
+    overflow: hidden; /* Evita que las imágenes se salgan */
+}
+
 
 #Medios_de_pago p{
 text-align: center;

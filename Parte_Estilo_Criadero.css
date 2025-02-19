@@ -280,7 +280,52 @@ img {
     width: 30px;
     height: 30px;
 }
-    #Pie_navega {
+    
+
+#Pie_navega2 {
+    height: auto; /* Evita que tenga una altura fija */
+    padding: 30px 20px 50px; /* Añade más espacio abajo */
+    text-align: center;
+    color: white;
+    background-color: black;
+    position: relative;
+}
+
+
+
+#Pie_navega2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1px;
+    padding-top: 30px;
+}
+
+#Pie_navega2 a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Mantiene el color del texto del padre */
+}
+
+a:visited {
+    color: inherit; /* Evita que cambie de color después de ser visitado */
+}
+
+#fca1 {
+    position: absolute;
+    right: -30px; /* Ajusta según necesites */
+    bottom: -20px;
+}
+
+#fca1 img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    position: relative;
+    overflow: hidden; /* Evita que las imágenes se salgan */
+}
+
+
+#Pie_navega {
         border: 1px solid black;
         text-align: center;
         height: 130px;
@@ -313,48 +358,68 @@ img {
 
    
 
-    #book-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin: 20px auto;
-    }
     
-    #photo-frame {
-        width: 900px;
-        height: 500px;
-        overflow: hidden;
-        border-radius: 10px;
-        border: 1px solid #000000;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    }
-    
-    #photo-frame img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    button {
-        background-color: #690808;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 18px;
-        border-radius: 5px;
-    }
-    #nextBtn  img{
-        transform: rotate(90deg); /* Gira la imagen 90 grados al pasar el mouse */
-        transition: transform 0.3s ease-in-out;
-        transform: rotateY(180deg);
-      }
-    
-    button:hover {
-        background-color: #000000;
-    }
-    
+   
+
+
+
+#book-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Mayor separación */
+    margin: 20px auto;
+}
+
+#photo-frame {
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+button {
+    background-color: #690808;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%; /* Hace los botones completamente redondos */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background-color: #000000;
+    transform: scale(1.1); /* Pequeña animación al pasar el mouse */
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+}
+
+#nextBtn img {
+    transform: rotate(0deg); /* Corrige la rotación de la flecha */
+}
+
+#prevBtn img {
+    transform: rotate(180deg);
+}
 
 #Secundario h2{
     font-family: fantasy;
@@ -368,3 +433,4 @@ img {
     
     border-radius: 20px;
 }
+
