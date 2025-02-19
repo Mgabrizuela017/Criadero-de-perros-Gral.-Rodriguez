@@ -139,7 +139,7 @@ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
     #Barra_lateral {
         width: 200px; /* Ajusta el tamaño según tu diseño */
         position: fixed; /* Fija la posición */
-        top: 120px; /* La distancia desde la parte superior de la pantalla */
+        top: 20px; /* La distancia desde la parte superior de la pantalla */
         left: 10px; /* La distancia desde el borde derecho */
         background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
         padding: 15px;

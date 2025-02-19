@@ -66,7 +66,7 @@ color: rgba(255, 255, 255, 0.945); /* Color del texto */
     #Barra_lateral2 {
         width: 200px; /* Ajusta el tamaño según tu diseño */
         position: fixed; /* Fija la posición */
-        top: 50px; /* La distancia desde la parte superior de la pantalla */
+        top: 20px; /* La distancia desde la parte superior de la pantalla */
         left: 10px; /* La distancia desde el borde derecho */
         background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
         padding: 15px;
@@ -211,7 +211,7 @@ img {
 
 #Medios_de_pago p{
     text-align: left;
-    margin: 60px;
+    margin: 50px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15pt;
     background-color: rgba(255, 255, 255, 0.089);
@@ -226,7 +226,7 @@ img {
     
     #Medios_de_pago{
         border: 2px solid black;
-        width: 900px;
+        width: 860px;
         margin: auto;
         margin-top: 30px;
         margin-left: 250px;

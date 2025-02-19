@@ -66,7 +66,7 @@ color: rgba(255, 255, 255, 0.945); /* Color del texto */
     #Barra_lateral2 {
         width: 200px; /* Ajusta el tamaño según tu diseño */
         position: fixed; /* Fija la posición */
-        top: 50px; /* La distancia desde la parte superior de la pantalla */
+        top: 20px; /* La distancia desde la parte superior de la pantalla */
         left: 10px; /* La distancia desde el borde derecho */
         background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
         padding: 15px;
