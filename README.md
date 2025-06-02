@@ -6,5 +6,6 @@ HTML5
 CSS3
 JavaScript -Jquery
 Git & GitHub
+
 📁 Estructura del proyecto
 /Criadero perros Gral.Rodriguez. index.html assets/ css/styles.css js/main.js img/ icons/ README.md
