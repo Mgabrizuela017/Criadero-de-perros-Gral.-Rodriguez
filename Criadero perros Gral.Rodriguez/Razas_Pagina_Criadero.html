@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Criadero de perros de raza General rodriguez</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+<link rel="stylesheet" href="Pag_criadero.css">   
+<link rel="stylesheet" href="Parte_Estilo_Criadero.css">
+<link rel="stylesheet" href="Razas.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script>
+
+
+
+        $(document).ready(function () {
+
+        $("#Barra_lateral_raza").hover(function () {
+            $(this).stop().animate({left:"0px"},200,"easeInSine");
+        }, function () {
+            $(this).stop().animate({left:"-202px"},200,"easeOutBounce");
+        });
+      
+        });//Termina ready
+</script>
+
+
+</head>
+<body id="Cuerpo_principal">
+
+
+<header>
+  <h1 class="Titulo"> Criadero de perros General Rodriguez</h1>
+ 
+   
+   
+  </header> 
+
+
+<div id="Navegador_raza">
+        
+    <nav id="Barra_navegador_raza">
+    
+    <ul id="NV_BARRA_raza">
+        <li><a href="Pag_criadero.html">Inicio</li> </a>
+        <li><a href="Contacto_Pag_criadero.html">Contacto</li> </a>
+        <li><a href="Razas_Pagina_Criadero.html"> Razas</li> </a>
+        <li><a href="Nosotros_pag_criadero.html">Nosotros</li> </a>
+    
+    </ul>
+
+   
+</nav>
+
+</div>
+  
+
+
+
+<div>
+   <aside id="Barra_lateral_raza">
+       <h3>Información Adicional</h3>
+     
+     <ul>
+         <li><a href="Pag_criadero.html">Inicio</a></li>
+         <li><a href="Contacto_Pag_criadero.html">Contacto</a></li>
+         <li><a href="Servicios.html">Servicios</a></li>
+         <li><a href="#">Testimonios</a></li>
+         <li><a href="#">Consejos de Cuidado</a></li>
+
+     </ul>
+
+ </aside>
+</div>
+
+   
+
+  <div id="Banner_raza">
+      
+    <div id="gallery_raza">
+     <img src="Imagenes/Criadero-bluekanil2.png" alt="Perro 1">
+     <img src="Imagenes/Criadero-bluekanil4.png" alt="Perro 2">
+     <img src="Imagenes/american_pitbull1.png " alt="Perro3" >
+     <img src="Imagenes/perro_3.jpeg" alt="Perro4" >
+    
+
+    </div>
+  
+  </div>
+
+
+
+    <div id="Contenido_pie">
+
+
+        
+      <footer>
+       
+            
+   <div id="Pie">
+       
+       <div id="Logo_ubicacion" class="contact-item">
+           <img src="Imagenes/Ubicacion_one.png"> 
+           <span>Av. Italia 650</span>
+       </div>
+   
+       <div id="LogoGmail" class="contact-item">
+           <img src="Imagenes/GMAIL_1.png"> 
+           <span>Dev07brizuela@gmail.com</span>
+       </div>
+   
+       <div id="Logo_whatsapp" class="contact-item">
+           <a href="https://web.whatsapp.com/"><img src="Imagenes/whatsapp_Transparente.png"></a> 
+           <span>Whatsapp: 1160461788</span>
+       </div>
+   </div>
+       </footer>
+   </div>
+
+   <footer id="Pie_navega2">
+       <address>
+           <p>© Copyright Criadero_Gral.Rodriguez All Rights Reserved</p>
+           <p id="Link_github">
+               Diseñado por 
+               <a href="https://github.com/Mgabrizuela017" target="_blank" rel="noopener noreferrer">
+                   Marcos G. Brizuela
+               </a>
+           </p>
+           <figure>
+               <img src="Imagenes/icono2_GITHUB.png" alt="Ícono de GitHub">
+           </figure>
+           
+           <figure id="fca1">
+               <img src="Imagenes/fca1.png" 
+                   alt="Medios de pago: Visa, Mastercard, Mercado Pago, Maestro, American Express">
+           </figure>
+       
+       </address>
+   </footer>
+   
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+html{
+    background-color: rgb(252, 116, 138);
+    background: url(Imagenes/Corazon_rosa.png)no-repeat;
+    background-size:cover;
+}
+
+.Titulo2{
+    font-family:fantasy;
+    font-size: 2.4em;
+    text-align: center;
+    /*background:url(Imagenes/Camil_logo.png)no-repeat right;*/
+    color: rgba(0, 0, 0, 0.61);
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px black;
+    }
+#Barra_navegador2{
+    
+    margin-top: 40px;
+    margin-left: 490px;
+    text-align:left;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    width: 330px;
+    padding: 10px;
+    background-color: rgba(184, 30, 30, 0.753);
+    border-radius: 20px;
+}
+
+#NV_BARRA2{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    font-family: fantasy;
+   
+    }
+
+#NV_BARRA2 li {
+margin-right: 15px; /* Espacio entre los elementos de la lista */
+
+}
+#NV_BARRA2  a{
+padding: 10px; /* Espacio interno en los enlaces */
+text-decoration: none; /* Eliminar subrayado */
+color: rgba(255, 255, 255, 0.945); /* Color del texto */
+
+}
+
+#NV_BARRA2 a:hover {
+    color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+   list-style: none;
+}
+
+#NV_BARRA2 a:visited {
+    color: rgb(255, 255, 255);
+}
+
+#NV_BARRA2 a:active {
+    color: red;
+}
+
+
+
+
+    #Barra_lateral2 {
+        width: 200px; /* Ajusta el tamaño según tu diseño */
+        position: fixed; /* Fija la posición */
+        top: 20px; /* La distancia desde la parte superior de la pantalla */
+        left: 10px; /* La distancia desde el borde derecho */
+        background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
+    }
+
+    #Barra_lateral2 ul{
+        list-style: none;
+        padding: 0;
+
+    }
+
+    #Barra_lateral2 li{
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo suave */
+        border-radius: 10px; /* Bordes redondeados */
+        text-align: center
+        
+        
+
+    }
+
+    #Barra_lateral2 a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.89);
+        display: block;
+        font-weight: bold;
+        font-size: 13pt;
+    }
+
+    #Barra_lateral2 a:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+}
+    
+        #Barra_lateral2 h3{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-right: 35px;
+        padding: 5px;
+        font-family: fantasy;
+        font-size: 16pt;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+    }
+
+     
+   
+
+    #Barra_lateral_izquierda{
+
+        width: 180px; /* Ajusta el tamaño según tu diseño */
+        height: 570px;
+        position: fixed; /* Fija la posición */
+        top: 30px; /* La distancia desde la parte superior de la pantalla */
+        right: 10px; /* La distancia desde el borde derecho */
+        background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
+        margin-bottom: 30px;
+    
+    }
+    
+    #Barra_lateral_izquierda h3{
+    margin-top: 10px;
+    margin-bottom: 7px;
+    margin-right: 35px;
+    padding: 5px;
+    font-family: fantasy;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    
+    }
+    
+    
+    
+    
+    #Barra_lateral_izquierda img{
+    width: 150px;
+    height: 210px;
+    margin-bottom: 10px;
+    margin-top: 10px;}
+    
+
+#Contenedor_contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #6b12124d; 
+
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+}
+
+#Logo_ubicacion {
+    background-color: #bb3b3be3; /* Verde */
+}
+
+#LogoGmail {
+    background-color: #ff5e009a; /* Rojo Gmail */
+}
+
+#Logo_whatsapp p{
+    background-color: #25D366; /* Verde WhatsApp */
+    
+}
+#Logo_whatsapp a:hover{
+    background-color: #25D366;
+    transition: 1.2s;
+    border-radius: 40px;
+    transform: rotate(360deg);
+
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+#Medios_de_pago p{
+    text-align: left;
+    margin: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    background-color: rgba(255, 255, 255, 0.089);
+    color: white;
+    border-radius: 20px;
+    width: 500px;
+    padding: 10px;
+    
+    
+    
+    }
+    
+    #Medios_de_pago{
+        border: 2px solid black;
+        width: 860px;
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 250px;
+        background-color: rgba(71, 12, 12, 0.712);
+        border-radius: 50px;
+        position:relative ;
+    }
+    
+    
+    #Mediospago {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    
+    #Mediospago img {
+        width: 260px;
+        height: auto;
+    }
+
+  
+    #Pie_navega2 {
+        height: auto; /* Evita que tenga una altura fija */
+        padding: 30px 20px 50px; /* Añade más espacio abajo */
+        text-align: center;
+        color: white;
+        background-color: black;
+        position: relative;
+    }
+
+
+    
+    #Pie_navega2 p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 1px;
+        padding-top: 30px;
+    }
+    
+    #Pie_navega2 a {
+        text-decoration: none; /* Quita el subrayado */
+        color: inherit; /* Mantiene el color del texto del padre */
+    }
+    
+    a:visited {
+        color: inherit; /* Evita que cambie de color después de ser visitado */
+    }
+    
+    #fca1 {
+        position: absolute;
+        right: -30px; /* Ajusta según necesites */
+        bottom: -20px;
+    }
+    
+    #fca1 img {
+        width: 150px;
+        height: auto;
+    }
+    
+    footer {
+        position: relative;
+        overflow: hidden; /* Evita que las imágenes se salgan */
+    }
+    

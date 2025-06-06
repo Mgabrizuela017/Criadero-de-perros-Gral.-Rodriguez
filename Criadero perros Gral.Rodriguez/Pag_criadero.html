@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Perros de raza General rodriguez</title>
+  <meta name="description" content="Perros-Razas-Criadero-Animales-Mascotas">
+  <meta name="keywords" content="">
+
+<link rel="stylesheet" href="Pag_criadero.css">   
+<link rel="stylesheet" href="Parte_Estilo_Criadero.css">
+
+
+<style>
+    #Link_github{
+        text-decoration: none;
+    }
+
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script>
+
+        $(document).ready(function () {
+
+        $("#Barra_lateral").hover(function () {
+            $(this).stop().animate({left:"0px"},200,"easeInSine");
+        }, function () {
+            $(this).stop().animate({left:"-202px"},200,"easeOutBounce");
+        });
+      
+        });//Termina ready
+</script>
+</head>
+
+<body id="Cuerpo_principal">
+   
+   
+    <header>
+    <h1 class="Titulo"> Criadero de perros General Rodriguez</h1>
+   
+     <div id="Banner">
+        
+       <div id="gallery">
+        <img src="Imagenes/ICONO-BULLDOG.PNG" alt="Perro 2">
+        <img src="Imagenes/bulldog3.png" alt="Perro4">
+        <img src="Imagenes/pitbull_2.png" alt="Perro 1">
+        <img src="Imagenes/terrier_icono.png" alt="Perro3">
+      
+        
+       </div>
+     
+     
+    </header>
+
+        
+        
+        <div id="Navegador">
+        
+            <nav id="Barra_navegador">
+            
+            <ul id="NV_BARRA">
+                <li><a href="Pag_criadero.html">Inicio </a></li>
+                <li><a href="Contacto_Pag_criadero.html">Contacto</a></li> 
+                <li><a href="Razas_Pagina_Criadero.html"> Razas</a></li> 
+                <li><a href="Nosotros_pag_criadero.html">Nosotros</a></li> 
+            
+            </ul>
+        
+           
+        </nav>
+        
+        </div>
+    
+    
+    
+    <div id="Contenedor_Principal">
+        
+        <div id="Principal">
+
+            <section>
+                <h2 id="Sub_titulo">Criadero de Perros General Rodriguez </h2>
+                
+                <p>  Criadero de Perros <strong>Gral. Rodriguez</strong> es un establecimiento dedicado a la crianza responsable y ética de perros de raza, priorizando la salud, el bienestar y la socialización de cada cachorro. Con años de experiencia y un equipo apasionado por los animales, ofrecemos ejemplares de alta calidad, criados en un ambiente seguro y familiar. Nos especializamos en  razas como [American pitbull terrier, bulldog frances y exoticos], garantizando estándares de pureza, vacunación al día y asesoramiento personalizado para cada adoptante. En Criadero Gral Rodriguez, nos comprometemos con el respeto y el amor por los perros, asegurando que cada uno encuentre un hogar adecuado y lleno de cariño.</p>
+           </section>
+        
+        
+        </div>
+  
+    
+      
+    </div>   
+           <div>
+            <aside id="Barra_lateral">
+                <h3>Información Adicional</h3>
+                
+                <ul>
+                    <li><a href="Pag_criadero.html">Inicio</a></li>
+                    <li><a href="Contacto_Pag_criadero.html">Contacto</a></li>
+                    <li><a href="Razas_Pagina_Criadero.html"> Razas</li> </a>
+                    <li><a href="Nosotros_pag_criadero.html">Nosotros</li> </a>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                   <!-- <li><a href="#">Testimonios</a></li>
+                    <li><a href="#">Consejos de Cuidado</a></li>-->
+           
+                </ul>
+
+            </aside>
+        </div>
+
+    
+           
+           <div id="Secundario">
+            <section>
+               <!-- <h2>Galería de Imágenes</h2>-->
+
+                <div id="book-container">
+                    <button id="prevBtn"><img src="Iconos/Flecha_Izquierda.png" width="30px"></button>
+                    
+                    <div id="photo-frame">
+                        <img id="Photo1" src="Imagenes/Perro_6.png" alt="Foto del criadero">
+                        <img id="Photo2" src="Imagenes/Perro_7.png" alt="Foto del criadero2">
+                        <img id="Photo3" src="Imagenes/Perro_8.png" alt="Foto del criadero3">
+                        <img id="Photo4" src="Imagenes/Perro_9.png" alt="Foto del criadero4">
+                        
+                    </div>
+                <button id="nextBtn"><img src="Iconos/Flecha_Izquierda.png" width="30px"></button>
+                </div>
+            </section>
+        </div>
+           
+<script>
+
+const images = document.querySelectorAll('#photo-frame img');
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+let currentIndex = 0;
+
+function updateGallery() {
+  images.forEach((img, index) => {
+    img.classList.remove('active');
+    if (index === currentIndex) {
+      img.classList.add('active');
+    }
+  });
+}
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateGallery();
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateGallery();
+});
+
+// Inicializar galería
+updateGallery();
+
+</script>
+                
+            
+        <div id="Mapa">
+            <h3>Ubicación</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13144.597651027128!2d-58.94976915!3d-34.65521865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2db15801b9f%3A0x1e7649a1b1f0d4e!2sGeneral%20Rodr%C3%ADguez%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2sar!4v1645896319154!5m2!1sen!2sar"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+   
+    <div id="Contenido_pie">
+
+
+        
+           <footer>
+            
+                 
+        <div id="Pie">
+            
+            <div id="Logo_ubicacion" class="contact-item">
+                <img src="Iconos/Ubicacion_one.png"> 
+                <span>Av. Italia 650</span>
+            </div>
+        
+            <div id="LogoGmail" class="contact-item">
+                <img src="Iconos/GMAIL_1.png"> 
+                <span>Dev07brizuela@gmail.com</span>
+            </div>
+        
+            <div id="Logo_whatsapp" class="contact-item">
+                <a href="https://web.whatsapp.com/"><img src="Iconos/whatsapp_Transparente.png"></a> 
+                <span>Whatsapp: 1160461788</span>
+            </div>
+        </div>
+            </footer>
+        </div>
+
+        <footer id="Pie_navega2">
+            <address>
+                <p>© Copyright Criadero_Gral.Rodriguez All Rights Reserved</p>
+                <p id="Link_github">
+                    Diseñado por 
+                    <a href="https://github.com/Mgabrizuela017" target="_blank" rel="noopener noreferrer">
+                        Marcos G. Brizuela
+                    </a>
+                </p>
+                <figure>
+                  <a href="https://github.com/Mgabrizuela017"><img src="Iconos/icono2_GITHUB.png" alt="Ícono de GitHub"></a> 
+                </figure>
+                
+                <figure id="fca1">
+                    <img src="Imagenes/fca1.png" 
+                        alt="Medios de pago: Visa, Mastercard, Mercado Pago, Maestro, American Express">
+                </figure>
+            
+            </address>
+        </footer>
+        
+    </div>
+
+</body>
+</html>
