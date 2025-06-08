@@ -10,8 +10,58 @@
 
 <link rel="stylesheet" href="Pag_criadero.css">   
 <link rel="stylesheet" href="Parte_Estilo_Criadero.css">
-<link rel="stylesheet" href="Razas.css">
 
+<style>
+
+#Banner_raza{
+    width: 800px;
+    height: 500px; /* Cambiado a auto para que se ajuste al contenido */
+    margin: auto;
+    margin-top: 2px;
+    border: none; /* Elimina el borde si no lo necesitas */
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+    
+
+    #gallery_raza {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+#gallery_raza img {
+    width: 260px; /* Ancho de las imágenes */
+    height: 260px; /* Alto de las imágenes */
+    object-fit: cover; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    border: 2px solid black;
+    box-shadow: 2px 2px 3px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+    transition: transform 0.1s; /* Efecto de transición */
+}
+
+#gallery_raza img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+
+#Barra_lateral_raza {
+    transition: all 0.5s ease;   
+    width: 200px; /* Ajusta el tamaño según tu diseño */
+    position: fixed; /* Fija la posición */
+    top: 20px; /* La distancia desde la parte superior de la pantalla */
+    left: -202px; /* La distancia desde el borde derecho */
+    background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
+}
+
+
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <script>
@@ -42,11 +92,11 @@
   </header> 
 
 
-<div id="Navegador_raza">
+<div id="Navegador">
         
-    <nav id="Barra_navegador_raza">
+    <nav id="Barra_navegador">
     
-    <ul id="NV_BARRA_raza">
+    <ul id="NV_BARRA">
         <li><a href="index.html">Inicio</li> </a>
         <li><a href="Contacto_Pag_criadero.html">Contacto</li> </a>
         <li><a href="Razas_Pagina_Criadero.html"> Razas</li> </a>
@@ -63,7 +113,7 @@
 
 
 <div>
-   <aside id="Barra_lateral_raza">
+   <aside id="Barra_lateral">
        <h3>Información Adicional</h3>
      
      <ul>
@@ -96,11 +146,7 @@
 
 
     <div id="Contenido_pie">
-
-
-        
-      <footer>
-       
+   
             
    <div id="Pie">
        
@@ -119,7 +165,7 @@
            <span>Whatsapp: 1160461788</span>
        </div>
    </div>
-       </footer>
+    
    </div>
 
    <footer id="Pie_navega2">

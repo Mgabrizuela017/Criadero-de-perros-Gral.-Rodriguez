@@ -2,6 +2,7 @@ html{
     background-color: rgb(252, 116, 138);
     background: url(Imagenes/Corazon_rosa.png)no-repeat;
     background-size:cover;
+    
 }
 
 .Titulo_Nosotros{
@@ -227,13 +228,15 @@ width: 500px; /* Ancho fijo para el contenido principal */
     
 }
 
+
 #Pie_navega2 {
-    height: auto; /* Evita que tenga una altura fija */
+    margin: 0;
+     height: 700px; /* Evita que tenga una altura fija */
     padding: 30px 20px 50px; /* Añade más espacio abajo */
     text-align: center;
     color: white;
     background-color: black;
-    position: relative;
+   
 }
 
 
@@ -251,21 +254,5 @@ width: 500px; /* Ancho fijo para el contenido principal */
 
 a:visited {
     color: inherit; /* Evita que cambie de color después de ser visitado */
-}
-
-#fca1 {
-    position: absolute;
-    right: -30px; /* Ajusta según necesites */
-    bottom: -20px;
-}
-
-#fca1 img {
-    width: 150px;
-    height: auto;
-}
-
-footer {
-    position: relative;
-    overflow: hidden; /* Evita que las imágenes se salgan */
 }
 

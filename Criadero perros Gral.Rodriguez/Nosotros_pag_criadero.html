@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="Pag_criadero.css">   
 <link rel="stylesheet" href="Parte_Estilo_Criadero.css">
-<link rel="stylesheet" href="Nosotros.css">
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -41,9 +41,9 @@
     
     <div id="Navegador">
         
-        <nav id="Barra_navegador_Nosotros">
+        <nav id="Barra_navegador">
         
-        <ul id="NV_BARRA_Nosotros">
+        <ul id="NV_BARRA">
             <li><a href="index.html">Inicio </a></li>
             <li><a href="Contacto_Pag_criadero.html">Contacto </a></li>
             <li><a href="Razas_Pagina_Criadero.html"> Razas </a></li>
@@ -113,7 +113,56 @@
     
     
 </section>
-     
+    
+    <section>
+               <!-- <h2>Galería de Imágenes</h2>-->
+
+                <div id="book-container">
+                    <button id="prevBtn"><img src="Iconos/Flecha_Izquierda.png" width="30px"></button>
+                    
+                    <div id="photo-frame">
+                        <img id="Photo1" src="Imagenes/Criadero-bluekanil2.png" alt="Foto del criadero">
+                        <img id="Photo2" src="Imagenes/Criadero-bluekanil1.png" alt="Foto del criadero2">
+                        <img id="Photo3" src="Imagenes/Criadero-bluekanil4.png" alt="Foto del criadero3">
+                        <img id="Photo4" src="Imagenes/Perro2.png" alt="Foto del criadero4">
+                        
+                    </div>
+                <button id="nextBtn"><img src="Iconos/Flecha_Izquierda.png" width="30px"></button>
+                </div>
+            </section>
+        
+           
+<script>
+
+const images = document.querySelectorAll('#photo-frame img');
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+let currentIndex = 0;
+
+function updateGallery() {
+  images.forEach((img, index) => {
+    img.classList.remove('active');
+    if (index === currentIndex) {
+      img.classList.add('active');
+    }
+  });
+}
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateGallery();
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateGallery();
+});
+
+// Inicializar galería
+updateGallery();
+
+</script> 
 
 
 <footer>
@@ -138,29 +187,31 @@
 </footer>
 
 
-<footer id="Pie_navega">
-    <address>
-        <p>© Copyright Criadero_Gral.Rodriguez All Rights Reserved</p>
-        <p id="Link_github">
-            Diseñado por 
-            <a href="https://github.com/Mgabrizuela017" target="_blank" rel="noopener noreferrer">
-                Marcos G. Brizuela
-            </a>
-        </p>
-        <figure>
-            <img src="Imagenes/icono2_GITHUB.png" alt="Ícono de GitHub">
-        </figure>
+        <footer id="Pie_navega2">
+            <address>
+                <p>© Copyright Criadero_Gral.Rodriguez All Rights Reserved</p>
+                <p id="Link_github">
+                    Diseñado por 
+                    <a href="https://github.com/Mgabrizuela017" target="_blank" rel="noopener noreferrer">
+                        Marcos G. Brizuela
+                    </a>
+                </p>
+                <figure>
+                  <a href="https://github.com/Mgabrizuela017"><img src="Iconos/icono2_GITHUB.png" alt="Ícono de GitHub"></a> 
+                </figure>
+                
+                <figure id="fca1">
+                   
+                </figure>
+            
+            </address>
+             <img src="Imagenes/fca1.png" width="320px" alt="60años Federacion_cinologica_Argentina">
+            <img id="Fc3" src="Imagenes/eukanuba2.png"  width="300px" height="300px" alt="Federacion_cinologica_Argentina">
+            <img  src="Imagenes/royalcanin3.png"  width="500px" height="300px" alt="Royalcanin">
+
+        </footer>
         
-        <figure id="fca1">
-            <img src="Imagenes/fca1.png" 
-                alt="Medios de pago: Visa, Mastercard, Mercado Pago, Maestro, American Express">
-        </figure>
-    
-    </address>
-</footer>
-
-</div>
-
+    </div>
 </body>
 </html>
 
