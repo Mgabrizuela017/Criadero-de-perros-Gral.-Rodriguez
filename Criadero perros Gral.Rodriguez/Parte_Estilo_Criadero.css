@@ -60,7 +60,7 @@ body {
 #Barra_navegador {
   margin: 20px auto;
   border: 2px solid #000;
-  width: 300px;
+  width: 320px;
   padding: 10px;
   background-color: rgba(184, 30, 30, 0.75);
   border-radius: 20px;
@@ -502,7 +502,8 @@ button img {
         padding:20px;
         padding-right: 36px;
         text-align: auto;
-        margin-top: 20px;
+        margin-top: 90px;
+        margin-bottom: 40px;
         background-color: rgba(100, 24, 24, 0.514);
         /*letter-spacing: 1px;*/
        /* word-spacing: 5px;*/
