@@ -542,8 +542,173 @@ input, select, textarea {
     border-radius: 20px;
     
     color: black;
-    
-    
-    
-    
+       
 }
+
+ /*SECCION TESTIMONIOS */
+
+.Parrafo{
+   
+    width: 1000px;
+    height: 800px;
+    text-align: center;
+    font-family: roboto;
+    font-size: 1.2em;
+    background-color: rgba(151, 29, 29, 0.657);
+    border-radius: 20px;
+}
+.Parrafo p{
+     margin: auto;
+    background-color: white;
+    width: 900px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.1em;
+}
+.Sub_titulo_parrafo{
+    font-size: 1.3em;
+    padding: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(255, 255, 255) 2px 2px 3px;
+}
+.Titulo_parrafo{
+    font-size: 2.1em;
+    color: white;
+    text-shadow: black 2px 2px 3px;
+}
+
+/*SECCION CONTACTO*/
+
+
+#Banner_raza{
+    width: 800px;
+    height: 500px; /* Cambiado a auto para que se ajuste al contenido */
+    margin: auto;
+    margin-top: 2px;
+    border: none; /* Elimina el borde si no lo necesitas */
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+    
+
+    #gallery_raza {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+#gallery_raza img {
+    width: 260px; /* Ancho de las imágenes */
+    height: 260px; /* Alto de las imágenes */
+    object-fit: cover; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    border: 2px solid black;
+    box-shadow: 2px 2px 3px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+    transition: transform 0.1s; /* Efecto de transición */
+}
+
+#gallery_raza img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+
+#Barra_lateral_raza {
+    transition: all 0.5s ease;   
+    width: 200px; /* Ajusta el tamaño según tu diseño */
+    position: fixed; /* Fija la posición */
+    top: 20px; /* La distancia desde la parte superior de la pantalla */
+    left: -202px; /* La distancia desde el borde derecho */
+    background-color: rgba(184, 30, 30, 0.9); /* Ajusta el color */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para que resalte */
+}
+
+
+.Barra_navegador {
+  margin: 20px auto;
+  border: 2px solid #000;
+  width: 360px;
+  padding: 10px;
+  background-color: rgba(184, 30, 30, 0.75);
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.NV_BARRA {
+  display: flex;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  font-family: fantasy;
+
+}
+
+.NV_BARRA li {
+  margin-right: 15px;
+}
+
+.NV_BARRA a {
+  padding: 1px 4px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.NV_BARRA a:hover {
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.NV_BARRA a:visited {
+  color: #fff;
+}
+
+.NV_BARRA a:active {
+  color: red;
+}
+
+
+
+#Medios_de_pago p{
+    text-align: left;
+    margin: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    background-color: rgba(255, 255, 255, 0.089);
+    color: white;
+    border-radius: 20px;
+    width: 500px;
+    padding: 10px;
+    
+    
+    
+    }
+    
+    #Medios_de_pago{
+        border: 2px solid black;
+        width: 800px;
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 250px;
+        background-color: rgba(71, 12, 12, 0.712);
+        border-radius: 50px;
+        position:relative ;
+    }
+    
+    
+    #Mediospago {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    
+    #Mediospago img {
+        width: 260px;
+        height: auto;
+    }
