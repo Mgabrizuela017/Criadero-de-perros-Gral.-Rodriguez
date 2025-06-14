@@ -26,6 +26,13 @@
         }, function () {
             $(this).stop().animate({left:"-202px"},200,"easeOutBounce");
         });
+
+         $("#Barra_lateral_izquierda").hover(function () {
+           $(this).stop().animate({right:"0px"},200,"easeInSine");
+        }, function () {
+            $(this).stop().animate({right:"-202px"},200,"easeOutBounce");
+        
+        });
       
         });//Termina ready
 </script>
