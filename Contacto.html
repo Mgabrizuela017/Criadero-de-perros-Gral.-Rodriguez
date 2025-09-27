@@ -198,7 +198,51 @@
     display: none;
   }
 }
+}
+/* ---- Medios de pago responsive ---- */
+#Medios_de_pago {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1rem;
+}
 
+#Mediospago img {
+  max-width: 300px; /* limita el ancho */
+  width: 100%;
+  height: auto;
+}
+
+/* ---- Ajustes en móviles ---- */
+@media (max-width: 600px) {
+  #Medios_de_pago {
+    max-width: 90%;
+    padding: 1rem;
+    font-size: 0.9rem; /* texto más chico */
+  }
+
+  #Mediospago img {
+    max-width: 200px; /* se achica más en celular */
+    margin: 0 auto;
+    display: block;
+  }
+
+  #Pie {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem; /* espacio entre items */
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+    font-size: 0.85rem;
+  }
+
+  .contact-item img {
+    width: 20px; /* iconos más chicos */
+  }
+}
 
 
 </style>
