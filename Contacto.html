@@ -10,7 +10,143 @@
 
 <link rel="stylesheet" href="Pag_criadero.css">   
 <link rel="stylesheet" href="Parte_Estilo_Criadero.css">
+<style>
+/* ----------- FORMULARIO DE CONTACTO ----------- */
+#Mi_formulario {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
+#Mi_formulario form p {
+  margin-bottom: 1rem;
+}
+
+#Mi_formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+#Mi_formulario input[type="text"],
+#Mi_formulario textarea,
+#Mi_formulario select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#Mi_formulario textarea {
+  resize: vertical;
+}
+
+#Mi_formulario input[type="submit"] {
+  background: #333;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#Mi_formulario input[type="submit"]:hover {
+  background: #555;
+}
+
+/* ----------- INFORMACIÓN SOBRE DATOS ----------- */
+#Informacion_sobre_datos {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* ----------- PIE DE CONTACTO ----------- */
+#Pie {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: #333;
+  color: white;
+  padding: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1rem;
+}
+
+.contact-item img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+#Medios_de_pago {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+#Mediospago img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+@media (max-width: 900px) {
+  #Pie {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #Mi_formulario {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  #Informacion_sobre_datos {
+    max-width: 95%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #Mi_formulario {
+    padding: 0.8rem;
+  }
+
+  #Mi_formulario input[type="text"],
+  #Mi_formulario textarea,
+  #Mi_formulario select {
+    font-size: 0.9rem;
+  }
+
+  #Mi_formulario input[type="submit"] {
+    width: 100%;
+  }
+
+  #Informacion_sobre_datos {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+}
+
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <script>
