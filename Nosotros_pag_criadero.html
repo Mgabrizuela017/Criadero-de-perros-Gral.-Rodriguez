@@ -11,7 +11,134 @@
 <link rel="stylesheet" href="Pag_criadero.css">   
 <link rel="stylesheet" href="Parte_Estilo_Criadero.css">
 
-<style>/* ==== ESTILOS RESPONSIVOS ==== */
+<style>
+/* --- Estilos base generales --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+#Navegador {
+  background-color: #333;
+}
+
+#Barra_navegador ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#Barra_navegador li {
+  margin: 0;
+}
+
+#Barra_navegador a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+}
+
+#Barra_navegador a:hover {
+  background-color: #555;
+}
+
+/* --- Ajustes de imágenes de galería --- */
+#photo-frame img {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+#photo-frame img.active {
+  display: block;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 1024px) {
+  #Barra_navegador ul {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #Barra_navegador ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+  }
+
+  #Barra_navegador a {
+    width: 100%;
+    text-align: center;
+    padding: 18px; /* más grande para que no se corte el background */
+    border-bottom: 1px solid #444;
+  }
+
+  #Portada img {
+    width: 100%;
+    height: auto;
+  }
+
+  aside#Barra_lateral2,
+  aside#Barra_lateral_izquierda {
+    display: none; /* ocultamos barras laterales en móvil */
+  }
+
+  #book-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #book-container button {
+    margin: 10px;
+  }
+
+  footer #Pie {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logos img {
+    max-width: 80px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  #Sub_titulo4 {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  #Barra_navegador a {
+    padding: 20px; /* más alto para dedo en móvil */
+    font-size: 1rem;
+  }
+
+  #Pie span {
+    font-size: 0.9rem;
+  }
+}
+
+/* ==== ESTILOS RESPONSIVOS ==== */
 @media (max-width: 1024px) {
   /* Navegador */
   #Barra_navegador {

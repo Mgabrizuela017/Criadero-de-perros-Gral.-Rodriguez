@@ -16,6 +16,150 @@
     #Link_github{
         text-decoration: none;
     }
+/* --------- ESTILOS GENERALES --------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background: #f5f5f5;
+}
+
+.Titulo {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+#Navegador {
+  background: #333;
+}
+
+#Barra_navegador ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#Barra_navegador li {
+  margin: 0.5rem;
+}
+
+#Barra_navegador a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+#Barra_navegador a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* --------- SECCIONES --------- */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.Parrafo {
+  padding: 1rem;
+}
+
+.Titulo_parrafo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.Sub_titulo_parrafo {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  color: #444;
+}
+
+/* --------- FOOTER --------- */
+#Pie {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.contact-item img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #ccc;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer-logos img {
+  height: 40px;
+  max-width: 100px;
+}
+
+/* --------- RESPONSIVE --------- */
+@media (max-width: 900px) {
+  #Barra_navegador ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Pie {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .Titulo {
+    font-size: 1.5rem;
+  }
+
+  .Titulo_parrafo {
+    font-size: 1.2rem;
+  }
+
+  .Sub_titulo_parrafo {
+    font-size: 1rem;
+  }
+
+  .footer-logos {
+    flex-wrap: wrap;
+  }
+
+  .footer-logos img {
+    height: 30px;
+  }
+}
+
 </style>
 
 
@@ -125,7 +269,8 @@
         
         </div>
 
-      <footer id="Pie_navega2">
+      <
+footer id="Pie_navega2">
     <address>
         <p>© Copyright Criadero_Gral.Rodriguez All Rights Reserved</p>
         <p id="Link_github">
