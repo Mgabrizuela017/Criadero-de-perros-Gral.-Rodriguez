@@ -11,220 +11,152 @@
 <link rel="stylesheet" href="Pag_criadero.css">   
 <link rel="stylesheet" href="Parte_Estilo_Criadero.css">
 <style>
-/* ----------- FORMULARIO DE CONTACTO ----------- */
+/* ----------- ESTILOS CENTRADOS GENERALES ----------- */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+/* Contenedores principales */
+#Mi_formulario,
+#Informacion_sobre_datos,
+#Medios_de_pago,
+#Pie {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Formulario */
 #Mi_formulario {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#Mi_formulario form p {
-  margin-bottom: 1rem;
-}
-
-#Mi_formulario label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0.4rem;
+#Mi_formulario form {
+    width: 100%;
 }
 
 #Mi_formulario input[type="text"],
 #Mi_formulario textarea,
 #Mi_formulario select {
-  width: 100%;
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-#Mi_formulario textarea {
-  resize: vertical;
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 #Mi_formulario input[type="submit"] {
-  background: #333;
-  color: #fff;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
+    background: #333;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
 }
 
 #Mi_formulario input[type="submit"]:hover {
-  background: #555;
+    background: #555;
 }
 
-/* ----------- INFORMACIÓN SOBRE DATOS ----------- */
+/* Información adicional */
 #Informacion_sobre_datos {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  background: #f1f1f1;
-  border-radius: 10px;
+    background: #f1f1f1;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
-/* ----------- PIE DE CONTACTO ----------- */
-#Pie {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  background: #333;
-  color: white;
-  padding: 1.5rem;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  margin: 0.5rem 1rem;
-}
-
-.contact-item img {
-  width: 25px;
-  margin-right: 8px;
-}
-
-#Medios_de_pago {
-  max-width: 600px;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-#Mediospago img {
-  max-width: 100%;
-  height: auto;
-}
-/* ----------- ESTILOS BASE ----------- */
-
-/* Galería de perritos (visible solo en desktop/tablet) */
+/* Galería de imágenes */
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center;
 }
 
 .galeria img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Medios de pago */
 #Medios_de_pago {
-  max-width: 600px;
-  margin: 2rem auto;
-  text-align: center;
-  font-size: 1rem;
-}
-
-#Mediospago img {
-  max-width: 300px;
-  width: 100%;
-  height: auto;
+    text-align: center;
 }
 
 /* Pie de página */
 #Pie {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: #333;
+    color: white;
+    padding: 1.5rem;
 }
 
-/* ----------- RESPONSIVE TABLET (≤ 900px) ----------- */
-@media (max-width: 900px) {
-  #Pie {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  #Mi_formulario {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 1rem;
+.contact-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  #Informacion_sobre_datos {
-    max-width: 90%;
-    margin: 1rem auto;
-    font-size: 0.9rem;
     text-align: center;
-  }
 }
 
-/* ----------- RESPONSIVE MOBILE (≤ 600px) ----------- */
+.contact-item img {
+    width: 25px;
+    margin-bottom: 0.5rem;
+}
+
+/* ----------- RESPONSIVE TABLET / MOBILE ----------- */
+@media (max-width: 900px) {
+    #Mi_formulario,
+    #Informacion_sobre_datos,
+    #Medios_de_pago {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+
+    #Mi_formulario input[type="submit"] {
+        width: 100%;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 600px) {
-  /* Formulario */
-  #Mi_formulario {
-    padding: 0.8rem;
-  }
+    #Mi_formulario,
+    #Informacion_sobre_datos,
+    #Medios_de_pago {
+        max-width: 95%;
+        padding: 0.8rem;
+    }
 
-  #Mi_formulario input[type="text"],
-  #Mi_formulario textarea,
-  #Mi_formulario select {
-    font-size: 0.9rem;
-    width: 100%;
-  }
+    .contact-item img {
+        width: 20px;
+    }
 
-  #Mi_formulario input[type="submit"] {
-    width: 100%;
-  }
-
-  #Informacion_sobre_datos {
-    padding: 0.8rem;
-    font-size: 0.85rem;
-  }
-
-  /* Contacto en el pie */
-  .contact-item {
-    justify-content: center;
-    font-size: 0.85rem;
-  }
-
-  .contact-item img {
-    width: 20px;
-  }
-
-  /* Perritos ocultos en móvil */
-  .galeria {
-    display: none;
-  }
-
-  /* Medios de pago */
-  #Medios_de_pago {
-    max-width: 90%;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-
-  #Mediospago img {
-    max-width: 200px;
-    margin: 0 auto;
-    display: block;
-  }
-
-  /* Pie de página */
-  #Pie {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    text-align: center;
-  }
+    .galeria {
+        display: none;
+    }
 }
+
 
 
 </style>
