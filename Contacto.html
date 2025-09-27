@@ -178,51 +178,27 @@
     text-align: center;
   }
 
-  /* Contenedor de las imágenes */
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    justify-items: center; /* centra cada imagen */
-  }
-
-  .galeria img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+ /* Por defecto se muestran */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-items: center;
 }
 
+.galeria img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* En móviles (menos de 600px) se ocultan */
 @media (max-width: 600px) {
-  #Mi_formulario {
-    padding: 0.8rem;
-  }
-
-  #Mi_formulario input[type="text"],
-  #Mi_formulario textarea,
-  #Mi_formulario select {
-    font-size: 0.9rem;
-    width: 100%;
-  }
-
-  #Mi_formulario input[type="submit"] {
-    width: 100%;
-  }
-
-  #Informacion_sobre_datos {
-    padding: 0.8rem;
-    font-size: 0.85rem;
-  }
-
-  .contact-item {
-    justify-content: center;
-  }
-
-  /* En celulares, una sola columna de perritos */
   .galeria {
-    grid-template-columns: 1fr;
+    display: none;
   }
 }
+
 
 
 </style>
