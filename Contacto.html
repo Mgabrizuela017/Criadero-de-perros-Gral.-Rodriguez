@@ -102,13 +102,51 @@
   max-width: 100%;
   height: auto;
 }
-/* ----------- RESPONSIVE DESIGN ----------- */
+/* ----------- ESTILOS BASE ----------- */
+
+/* Galería de perritos (visible solo en desktop/tablet) */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.galeria img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Medios de pago */
+#Medios_de_pago {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#Mediospago img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+/* Pie de página */
+#Pie {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* ----------- RESPONSIVE TABLET (≤ 900px) ----------- */
 @media (max-width: 900px) {
   #Pie {
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1rem;
   }
 
   #Mi_formulario {
@@ -128,7 +166,9 @@
   }
 }
 
+/* ----------- RESPONSIVE MOBILE (≤ 600px) ----------- */
 @media (max-width: 600px) {
+  /* Formulario */
   #Mi_formulario {
     padding: 0.8rem;
   }
@@ -149,98 +189,40 @@
     font-size: 0.85rem;
   }
 
-  .contact-item {
-    justify-content: center;
-  }
-}
-/* ----------- RESPONSIVE DESIGN ----------- */
-@media (max-width: 900px) {
-  #Pie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  #Mi_formulario {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #Informacion_sobre_datos {
-    max-width: 90%;
-    margin: 1rem auto;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-
- /* Por defecto se muestran */
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  justify-items: center;
-}
-
-.galeria img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* En móviles (menos de 600px) se ocultan */
-@media (max-width: 600px) {
-  .galeria {
-    display: none;
-  }
-}
-}
-/* ---- Medios de pago responsive ---- */
-#Medios_de_pago {
-  max-width: 600px;
-  margin: 2rem auto;
-  text-align: center;
-  font-size: 1rem;
-}
-
-#Mediospago img {
-  max-width: 300px; /* limita el ancho */
-  width: 100%;
-  height: auto;
-}
-
-/* ---- Ajustes en móviles ---- */
-@media (max-width: 600px) {
-  #Medios_de_pago {
-    max-width: 90%;
-    padding: 1rem;
-    font-size: 0.9rem; /* texto más chico */
-  }
-
-  #Mediospago img {
-    max-width: 200px; /* se achica más en celular */
-    margin: 0 auto;
-    display: block;
-  }
-
-  #Pie {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem; /* espacio entre items */
-    text-align: center;
-  }
-
+  /* Contacto en el pie */
   .contact-item {
     justify-content: center;
     font-size: 0.85rem;
   }
 
   .contact-item img {
-    width: 20px; /* iconos más chicos */
+    width: 20px;
+  }
+
+  /* Perritos ocultos en móvil */
+  .galeria {
+    display: none;
+  }
+
+  /* Medios de pago */
+  #Medios_de_pago {
+    max-width: 90%;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #Mediospago img {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Pie de página */
+  #Pie {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    text-align: center;
   }
 }
 
