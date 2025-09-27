@@ -159,6 +159,67 @@ footer {
     height: 30px;
   }
 }
+/* --------- SECCIÓN PÁRRAFOS --------- */
+.Parrafo {
+  max-width: 900px;       /* limita el ancho para que el texto no se haga eterno en pantallas grandes */
+  margin: auto;
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.Parrafo p {
+  margin-bottom: 1.2rem;
+}
+
+/* Subtítulos */
+.Titulo_parrafo {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.Sub_titulo_parrafo {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: #444;
+}
+
+/* --------- RESPONSIVE --------- */
+@media (max-width: 900px) {
+  .Parrafo {
+    max-width: 95%;
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  .Titulo_parrafo {
+    font-size: 1.5rem;
+  }
+
+  .Sub_titulo_parrafo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .Parrafo {
+    max-width: 100%;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .Titulo_parrafo {
+    font-size: 1.3rem;
+  }
+
+  .Sub_titulo_parrafo {
+    font-size: 1rem;
+  }
+}
+
 
 </style>
 
