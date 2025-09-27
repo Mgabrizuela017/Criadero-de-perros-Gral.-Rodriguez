@@ -728,3 +728,10 @@ input, select, textarea {
         width: 260px;
         height: auto;
     }
+/* ==== Ocultar enlaces de Testimonios y Contacto en móvil ==== */
+@media (max-width: 768px) {
+  #NV_BARRA li a[href*="Testimonios"],
+  #NV_BARRA li a[href*="Contacto"] {
+    display: none !important;
+  }
+}
