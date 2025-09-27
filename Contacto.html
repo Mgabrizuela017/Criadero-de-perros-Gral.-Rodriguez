@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="Parte_Estilo_Criadero.css">
 <style>
 /* ----------- ESTILOS CENTRADOS GENERALES ----------- */
+/* -------------------- ESTILOS GENERALES -------------------- */
 body {
     margin: 0;
     padding: 0;
@@ -23,7 +24,7 @@ h1, h2, h3, p {
     text-align: center;
 }
 
-/* Contenedores principales */
+/* -------------------- CONTENEDORES PRINCIPALES -------------------- */
 #Mi_formulario,
 #Informacion_sobre_datos,
 #Medios_de_pago,
@@ -34,7 +35,7 @@ h1, h2, h3, p {
     border-radius: 10px;
 }
 
-/* Formulario */
+/* -------------------- FORMULARIO -------------------- */
 #Mi_formulario {
     background: #f9f9f9;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -73,14 +74,14 @@ h1, h2, h3, p {
     background: #555;
 }
 
-/* Información adicional */
+/* -------------------- INFORMACIÓN ADICIONAL -------------------- */
 #Informacion_sobre_datos {
     background: #f1f1f1;
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
-/* Galería de imágenes */
+/* -------------------- GALERÍA DE IMÁGENES -------------------- */
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -94,12 +95,12 @@ h1, h2, h3, p {
     border-radius: 10px;
 }
 
-/* Medios de pago */
+/* -------------------- MEDIOS DE PAGO -------------------- */
 #Medios_de_pago {
     text-align: center;
 }
 
-/* Pie de página */
+/* -------------------- PIE DE PÁGINA -------------------- */
 #Pie {
     display: flex;
     justify-content: center;
@@ -122,7 +123,7 @@ h1, h2, h3, p {
     margin-bottom: 0.5rem;
 }
 
-/* ----------- RESPONSIVE TABLET / MOBILE ----------- */
+/* -------------------- RESPONSIVE TABLET (≤ 900px) -------------------- */
 @media (max-width: 900px) {
     #Mi_formulario,
     #Informacion_sobre_datos,
@@ -140,6 +141,7 @@ h1, h2, h3, p {
     }
 }
 
+/* -------------------- RESPONSIVE MÓVIL (≤ 600px) -------------------- */
 @media (max-width: 600px) {
     #Mi_formulario,
     #Informacion_sobre_datos,
@@ -152,11 +154,12 @@ h1, h2, h3, p {
         width: 20px;
     }
 
-    .galeria {
+    /* Ocultar galería y medios de pago en móvil */
+    .galeria,
+    #Medios_de_pago {
         display: none;
     }
 }
-
 
 
 </style>
