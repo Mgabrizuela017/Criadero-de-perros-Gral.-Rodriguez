@@ -124,6 +124,48 @@ h1, h2, h3, p {
     width: 25px;
     margin-bottom: 0.5rem;
 }
+/* -------------------- BANNER RAZA -------------------- */
+#Banner_raza {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#gallery_raza {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    justify-items: center;
+}
+
+#gallery_raza img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* -------------------- RESPONSIVE TABLET (≤ 900px) -------------------- */
+@media (max-width: 900px) {
+    #Banner_raza {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+}
+
+/* -------------------- RESPONSIVE MÓVIL (≤ 600px) -------------------- */
+@media (max-width: 600px) {
+    #Banner_raza {
+        max-width: 95%;
+        padding: 0.8rem;
+    }
+
+    #gallery_raza {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* -------------------- RESPONSIVE TABLET (≤ 900px) -------------------- */
 @media (max-width: 900px) {
@@ -161,11 +203,7 @@ h1, h2, h3, p {
     #Medios_de_pago {
         display: none;
     }
-    .Banner_raza{
-    margin: auto;
-    width: 30%;
 
-}
 }
 
 
@@ -346,12 +384,12 @@ h1, h2, h3, p {
    
        <div id="LogoGmail" class="contact-item">
            <img src="Iconos/GMAIL_1.png"> 
-           <span>Dev07brizuela@gmail.com</span>
+                <span>CriaderoGeneralRodriguez01@gmail.com</span>
        </div>
    
        <div id="Logo_whatsapp" class="contact-item">
-           <a href="https://web.whatsapp.com/"><img src="Iconos/whatsapp_Transparente.png"></a> 
-           <span>Whatsapp: 1160461788</span>
+            <a href="https://wa.me/5491133592158.com" target="_blank"><img src="Iconos/whatsapp_Transparente.png"></a> 
+           <span>Whatsapp: 11 3359-2158</span>
        </div>
    </div>
     
