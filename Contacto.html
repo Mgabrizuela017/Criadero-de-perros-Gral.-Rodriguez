@@ -271,7 +271,7 @@ h1, h2, h3, p {
          <li><a href="index.html">Inicio</a></li>
          <li><a href="Contacto_Pag_criadero.html">Contacto</a></li>
          <li><a href="Servicios.html">Servicios</a></li>
-         <li><a href="Consejos_de_cuidado.html">Consejos de Cuidado</a></li>
+        <!--<li><a href="Consejos_de_cuidado.html">Consejos de Cuidado</a></li>-->
 
      </ul>
 
@@ -361,6 +361,32 @@ h1, h2, h3, p {
     cursor: pointer;
     font-weight: bold;
     font-size: 1.2rem;
+  }
+/* 📱 Responsivo */
+  @media (max-width: 480px) {
+    .alerta-exito {
+      left: 50%;
+      transform: translateX(-50%);
+      right: auto;
+      width: 90%;
+      max-width: none;
+      top: 10px;
+      font-size: 0.95rem;
+      padding: 14px 18px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .alerta-exito .cerrar {
+      position: absolute;
+      right: 14px;
+      top: 10px;
+    }
+
+    .alerta-exito.show {
+      right: auto;
+      opacity: 1;
+    }
   }
 </style>
 
