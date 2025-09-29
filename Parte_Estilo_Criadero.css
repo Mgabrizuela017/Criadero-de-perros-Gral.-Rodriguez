@@ -495,9 +495,16 @@ main {
   #Barra_lateral,
   #Barra_lateral2,
   #Barra_lateral_izquierda {
-    display: none; /* Oculta barras laterales en pantallas pequeñas */
+  /*   display: none; Oculta barras laterales en pantallas pequeñas */
   }
+/* ==== Ocultar enlaces de Testimonios y Contacto en móvil ==== */
 
+  #NV_BARRA li a[href*="Testimonios"],
+  #NV_BARRA li a[href*="Contacto"] {
+    display: none !important;
+    flex-direction: row;
+  }
+}
   #Portada img {
     max-width: 100%;
     height: auto;
@@ -728,10 +735,4 @@ input, select, textarea {
         width: 260px;
         height: auto;
     }
-/* ==== Ocultar enlaces de Testimonios y Contacto en móvil ==== */
-@media (max-width: 768px) {
-  #NV_BARRA li a[href*="Testimonios"],
-  #NV_BARRA li a[href*="Contacto"] {
-    display: none !important;
-  }
-}
+
