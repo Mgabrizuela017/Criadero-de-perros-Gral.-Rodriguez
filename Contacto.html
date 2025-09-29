@@ -249,7 +249,7 @@ h1, h2, h3, p {
     
     <ul class="NV_BARRA">
         <li><a href="index.html">Inicio</li> </a>
-         <li><a href="Testimonios.html">Testimonios</a></li> 
+                   <!-- <li><a href="Testimonios.html">Testimonios</a></li>-->
         <li><a href="Contacto.html"> Contacto</li> </a>
         <li><a href="Nosotros_pag_criadero.html">Nosotros</li> </a>
     
@@ -331,7 +331,67 @@ h1, h2, h3, p {
             </form>
     
         </div>
-        
+        <style>
+  /* --- ALERTA PERSONALIZADA --- */
+  .alerta-exito {
+    position: fixed;
+    top: 20px;
+    right: -400px; /* inicia fuera de pantalla */
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  .alerta-exito.show {
+    right: 20px;
+    opacity: 1;
+  }
+
+  .alerta-exito .cerrar {
+    margin-left: auto;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+</style>
+
+<div id="alerta" class="alerta-exito">
+  ✅ ¡Mensaje enviado exitosamente!
+  <span class="cerrar">&times;</span>
+</div>
+
+<script>
+  const form = document.getElementById("subForm");
+  const alerta = document.getElementById("alerta");
+  const cerrar = alerta.querySelector(".cerrar");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita envío real para demo
+
+    // Mostrar alerta
+    alerta.classList.add("show");
+
+    // Ocultar después de 3s automáticamente
+    setTimeout(() => {
+      alerta.classList.remove("show");
+    }, 3000);
+  });
+
+  // Cerrar manualmente
+  cerrar.addEventListener("click", () => {
+    alerta.classList.remove("show");
+  });
+</script>
+
         <div id="Informacion_sobre_datos">
 
             <p>En el Criadero General rodriguez, valoramos tu privacidad. Por eso, protegemos cuidadosamente tu información para evitar cualquier uso indebido. La Ley de Protección de Datos Personales te respalda en caso de publicaciones no autorizadas o malintencionadas de tu información. Tu seguridad es nuestra prioridad.</p>
